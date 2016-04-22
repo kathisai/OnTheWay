@@ -4,9 +4,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/topbar_bg"
-    android:minHeight="@dimen/abc_action_bar_default_height_material"
-    spicejet:navigationIcon="@drawable/home_menu" >
+    android:background="@color/grey">
     
     <ImageView
         android:id="@+id/img_menu"
@@ -15,50 +13,19 @@
         android:layout_gravity="left"
         android:contentDescription="@string/empty_string"
         android:onClick="toggleDrawer"
-        android:visibility="invisible"
-        android:src="@drawable/red_menu"/>
+        android:src="@drawable/back" />
 
-    <com.vl.spicejet.components.CustomTextView
+    <com.vl.ontheway.components.CustomTextView
         android:id="@+id/toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/app_name"
+        android:text="Get A Ride !"
         android:textColor="@color/app_theme_red"
         android:textSize="@dimen/dp_20"
         spicejet:textStyle="regular" />
 
-  <!--   <ImageView
-        android:id="@+id/img_menu_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_10"
-        android:contentDescription="@string/empty_string"
-        android:src="@drawable/login"
-        android:visibility="gone" /> -->
     
-    <ImageView
-        android:id="@+id/img_menu_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_10"
-        android:contentDescription="@string/empty_string"
-        android:src="@drawable/information"
-        android:visibility="gone" />
-    
-    <ImageView
-        android:id="@+id/img_menu_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_10"
-        android:contentDescription="@string/empty_string"
-        android:src="@drawable/cancel"
-        android:visibility="gone" />
+
 
 </android.support.v7.widget.Toolbar>
