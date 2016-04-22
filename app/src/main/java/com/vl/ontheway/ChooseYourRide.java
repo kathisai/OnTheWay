@@ -7,23 +7,38 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AddOnsActivity extends AppCompatActivity {
+public class ChooseYourRide extends AppCompatActivity {
+
     ImageView back_button;
     TextView toolbar_title;
-    TextView meals;
+
+    TextView singlecar;
+    TextView groupCar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_ons);
+        setContentView(R.layout.activity_choose_your_ride);
+
         back_button = (ImageView)findViewById(R.id.img_menu);
         toolbar_title = (TextView)findViewById(R.id.toolbar_title);
 
-        toolbar_title.setText("Addons");
-        meals = (TextView)findViewById(R.id.hotmeals);
-        meals.setOnClickListener(new View.OnClickListener() {
+
+        singlecar = (TextView)findViewById(R.id.singlecar);
+        groupCar = (TextView)findViewById(R.id.groupCar);
+
+        singlecar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddOnsActivity.this,Orderfood.class);
+                Intent intent = new Intent(ChooseYourRide.this,CarDetailsActivity.class);
+                intent.putExtra("Type","single");
+                startActivity(intent);
+            }
+        });
+        groupCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChooseYourRide.this,GetARide.class);
+                intent.putExtra("Type","group");
                 startActivity(intent);
             }
         });

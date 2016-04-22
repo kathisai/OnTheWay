@@ -82,143 +82,95 @@
 
 
         <LinearLayout
-            android:id="@+id/smokeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/location"
-            android:layout_marginBottom="@dimen/dp_15"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/chkIos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="No Smoking" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.6"
-                android:src="@drawable/checkbox" />
-
-            <com.vl.ontheway.components.CustomTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.4"
-                android:gravity="center_vertical"
-                android:text="No Smoking"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dp_15" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:src="@drawable/sidemenu_checkin" />
-
-
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_adult" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/location"
-            android:layout_marginBottom="@dimen/dp_15"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/chkAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:checked="true"
+                android:text="women Only" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.6"
-                android:src="@drawable/checkbox" />
-
-            <com.vl.ontheway.components.CustomTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.4"
-                android:gravity="center_vertical"
-                android:text="Women Only"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dp_15" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:src="@drawable/sidemenu_checkin" />
-
-
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_adult" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/container3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/location"
-            android:layout_marginBottom="@dimen/dp_15"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/chkWindows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Own Car" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.6"
-                android:src="@drawable/checkbox" />
-
-            <com.vl.ontheway.components.CustomTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.4"
-                android:gravity="center_vertical"
-                android:text="Own vehicle?"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dp_15" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:src="@drawable/sidemenu_checkin" />
-
-
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_adult" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:id="@+id/container4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/location"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="1"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/chkWindows1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="AC Available" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="0.6"
-                android:src="@drawable/checkbox" />
-
-            <com.vl.ontheway.components.CustomTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.4"
-                android:gravity="center_vertical"
-                android:text="AC Available"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dp_15" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:src="@drawable/sidemenu_checkin" />
-
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_adult" />
         </LinearLayout>
+
+
+
+
+
     </LinearLayout>
 
     <com.vl.ontheway.components.CustomTextView

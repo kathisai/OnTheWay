@@ -618,4 +618,6 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_find_flights">FindFlightsActivity</string>
     <string name="title_activity_add_ons">AddOnsActivity</string>
+    <string name="title_activity_choose_your_ride">ChooseYourRide</string>
+    <string name="title_activity_car_details">CarDetailsActivity</string>
 </resources>

@@ -15,43 +15,56 @@
         android:textColor="@color/red"
         android:text="SpiceMax"
         android:padding="10dp"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/addon_spicemax"
+        android:drawablePadding="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
         android:text="Chosse your seat"
         android:padding="10dp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/addon_chooseseat"
+        android:drawablePadding="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
-        android:text="Hot Meals on board"
+        android:text="Hot meals on board"
+        android:drawableLeft="@drawable/addon_hotmeals"
         android:padding="10dp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:drawablePadding="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
         android:text="Excess Baggage"
+        android:drawableLeft="@drawable/addon_excessbaggage"
         android:padding="10dp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:drawablePadding="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
         android:text="Spice Assurance"
+        android:drawableLeft="@drawable/spiceassurance"
         android:padding="10dp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:drawablePadding="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
         android:text="Hot Meals at the airport"
+        android:drawableLeft="@drawable/addon_hotmeals"
         android:padding="10dp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:drawablePadding="10dp"
+        android:id="@+id/hotmeals"/>
 
     <Button
         android:layout_width="match_parent"

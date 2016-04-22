@@ -59,7 +59,12 @@ public class FindFlightsActivity extends AppCompatActivity implements View.OnCli
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 
@@ -112,7 +117,7 @@ public class FindFlightsActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.take_a_ride:
-                Intent intent = new Intent(FindFlightsActivity.this,GetARide.class);
+                Intent intent = new Intent(FindFlightsActivity.this,ChooseYourRide.class);
                 startActivity(intent);
                 break;
 
