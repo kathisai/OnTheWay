@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import java.util.List;
-
 /**
  * Created by skathi on 4/22/2016.
  */
@@ -48,7 +46,6 @@ public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.Custo
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         protected ImageView mTick;
         protected ImageView mFoodImage;
-
         public CustomViewHolder(View view) {
             super(view);
             this.mTick = (ImageView) view.findViewById(R.id.IV_tick);
