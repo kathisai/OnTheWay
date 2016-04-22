@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:spicejet="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_theme_red"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <View
         android:layout_width="match_parent"
@@ -28,9 +27,9 @@
 
         <include
             android:id="@+id/include_user"
+            layout="@layout/include_login_edit"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/include_login_edit" />
+            android:layout_height="wrap_content" />
 
         <View
             android:id="@+id/separator"
@@ -41,12 +40,12 @@
 
         <include
             android:id="@+id/include_pswd"
+            layout="@layout/include_login_edit"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/include_login_edit" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <com.vl.spicejet.components.CustomButton
+    <com.vl.ontheway.components.CustomButton
         android:id="@+id/tv_sign_in"
         style="@style/login_buttons_theme"
         android:layout_width="wrap_content"
@@ -63,7 +62,7 @@
         android:textSize="@dimen/sp_15"
         spicejet:textStyle="regular" />
 
-    <com.vl.spicejet.components.CustomTextView
+    <com.vl.ontheway.components.CustomTextView
         android:id="@+id/forgot_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -86,7 +85,7 @@
         android:layout_marginRight="@dimen/dp_15"
         android:background="@color/login_divider" />
 
-    <com.vl.spicejet.components.CustomTextView
+    <com.vl.ontheway.components.CustomTextView
         android:id="@+id/tv_sign_up"
         style="@style/login_buttons_theme"
         android:layout_width="wrap_content"
@@ -135,7 +134,7 @@
             android:onClick="onClick" />
     </LinearLayout>
 
-    <com.vl.spicejet.components.CustomTextView
+    <com.vl.ontheway.components.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout1"

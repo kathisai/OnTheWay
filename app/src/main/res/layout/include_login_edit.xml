@@ -25,7 +25,7 @@
             android:layout_marginLeft="@dimen/dp_3"
             android:background="@drawable/username" />
 
-        <com.vl.spicejet.components.CustomTextView
+        <com.vl.ontheway.components.CustomTextView
             android:id="@+id/fieldname_et"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,12 +37,12 @@
             spicejet:textStyle="regular" />
     </LinearLayout>
 
-    <com.vl.spicejet.components.CustomTextView
+    <com.vl.ontheway.components.CustomTextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.02" />
 
-    <com.vl.spicejet.components.CustomEditText
+    <com.vl.ontheway.components.CustomEditText
         android:id="@+id/fieldvalue_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white" >
+    android:background="@color/white">
 
     <!--
     <LinearLayout
@@ -20,7 +19,7 @@
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <com.vl.spicejet.components.CustomButton
+        <com.vl.spicejet.com.vl.ontheway.components.CustomButton
             android:id="@+id/btn_done"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp_40"
@@ -37,18 +36,26 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1" />
-    </LinearLayout>
+    </LinearLayout>
+
+
+
+
     -->
 
 
     <!--
-    <com.vl.spicejet.components.FlowLayout
+    <com.vl.spicejet.com.vl.ontheway.components.FlowLayout
         android:id="@+id/flow_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >
-    </com.vl.spicejet.components.FlowLayout>
+    </com.vl.spicejet.com.vl.ontheway.components.FlowLayout>
+
+
+
+
     -->
 
     <TextView
@@ -68,10 +75,10 @@
         android:orientation="vertical" >
 
         <include
+            layout="@layout/list_header_seat_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.2"
-            layout="@layout/list_header_seat_layout" />
+            android:layout_weight="0.2" />
 
         <ListView
             android:id="@+id/lv_passengersList"
@@ -100,7 +107,11 @@
         
         android:layout_above="@+id/ll_done_seat" >
 
-    </ListView>
+    </ListView>
+
+
+
+
     -->
 
 
@@ -111,7 +122,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@color/app_theme_red"
-        android:padding="@dimen/dp_10" >
+        android:padding="@dimen/dp_10" >
+
+
+
     -->
 
     <ImageView

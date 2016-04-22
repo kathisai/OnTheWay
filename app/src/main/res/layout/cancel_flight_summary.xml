@@ -12,10 +12,10 @@
 
     <include
         android:id="@+id/itineraryTwoWayHeader"
+        layout="@layout/itinerary_header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/itineraryHeader"
-        layout="@layout/itinerary_header"
         android:visibility="gone" />
 
     <ScrollView
@@ -54,19 +54,19 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:text="@string/cute_fee"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/cuteFeeTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"
@@ -83,21 +83,21 @@
                     android:layout_gravity="center"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:text="@string/service_tax"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_gravity="center_vertical"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/serviceTaxTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"
@@ -113,19 +113,19 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:text="@string/passenger_service"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/passengerServiceFeeTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"
@@ -141,19 +141,19 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:text="@string/user_develop_fee"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/userDevelopTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"
@@ -168,19 +168,19 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:text="@string/convenience_fee"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/convenienceFeeTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"
@@ -195,19 +195,19 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dp_10" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         style="@style/manage_booking_details_input"
                         android:layout_height="wrap_content"
                         android:text="@string/change_cancel_fee"
                         spicejet:textStyle="regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=":" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
                         android:id="@+id/changeCancelFeeTv"
                         style="@style/manage_booking_details_input_value"
                         android:layout_width="wrap_content"

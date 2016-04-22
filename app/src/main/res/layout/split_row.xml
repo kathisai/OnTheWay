@@ -70,7 +70,7 @@
         android:background="@drawable/ic_register_textheader"
         android:padding="@dimen/dp_5" >
 
-        <com.vl.spicejet.components.CustomTextView
+        <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -88,7 +88,7 @@
             android:layout_toLeftOf="@+id/nettotal"
             android:background="@color/app_theme_red" />
 
-        <com.vl.spicejet.components.CustomTextView
+        <com.vl.spicejet.com.vl.ontheway.components.CustomTextView
             android:id="@+id/nettotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
