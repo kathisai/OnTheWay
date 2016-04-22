@@ -71,7 +71,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:drawableTop="@drawable/addons"
-                    android:text="@string/my_booking"
+                    android:text="Addons"
                     android:visibility="visible" />
             </LinearLayout>
 

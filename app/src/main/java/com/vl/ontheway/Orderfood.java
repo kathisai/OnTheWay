@@ -1,16 +1,14 @@
 package com.vl.ontheway;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.CheckBox;
-
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +30,7 @@ public class Orderfood extends AppCompatActivity {
         mImg_menu.setImageResource(R.drawable.back);
         mToolbar_title.setText("Hot Meals");
 
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
         HotMealsAdapter mHotmealsAdapter=new HotMealsAdapter(Orderfood.this);
         mRecyclerView.setAdapter(mHotmealsAdapter);
 
@@ -49,12 +48,12 @@ public class Orderfood extends AppCompatActivity {
                 CheckBox CB_spiceClubmem = (CheckBox) findViewById(R.id.CB_SpiceCLub);
                 CheckBox CB_PayOn = (CheckBox) findViewById(R.id.CB_CashonPick);
                 TextView TV_YoUAreDOne = (TextView) findViewById(R.id.TV_YoUAreDOne);
-                if (CB_spiceClubmem.isActivated()) {
+              /*  if (CB_spiceClubmem.isActivated()) {
                     CB_PayOn.setActivated(false);
                 }
                 if (CB_PayOn.isActivated()) {
                     CB_spiceClubmem.setActivated(false);
-                }
+                }*/
                 TV_YoUAreDOne.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

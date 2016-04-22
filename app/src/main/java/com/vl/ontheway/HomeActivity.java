@@ -91,7 +91,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_my_booking:
-                Intent intent = new Intent(HomeActivity.this,GetARide.class);
+                Intent intent = new Intent(HomeActivity.this,Orderfood.class);
                 intent.putExtra("UserId",UserId);
                 startActivity(intent);
                 break;

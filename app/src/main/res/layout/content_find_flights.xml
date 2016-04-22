@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bordingPass"
-                />
+                android:src="@drawable/boarding"/>
 
             <TextView
                 android:id="@+id/take_a_ride"

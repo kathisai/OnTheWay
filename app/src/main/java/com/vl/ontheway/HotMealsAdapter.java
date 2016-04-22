@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import java.util.List;
-
 /**
  * Created by skathi on 4/22/2016.
  */
@@ -30,7 +28,7 @@ public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.Custo
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_mealrecycleritems, null);
 
         CustomViewHolder viewHolder = new CustomViewHolder(view);
-        return null;
+        return viewHolder;
     }
 
 
@@ -46,11 +44,12 @@ public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.Custo
 
 
         holder.mFoodImage.setImageResource(imageIDs[position]);
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return imageIDs.length;
     }
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         protected ImageView mTick;
