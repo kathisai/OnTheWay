@@ -85,10 +85,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_flight_booking:
                 Intent intent_find_flight = new Intent(HomeActivity.this,FindFlightsActivity.class);
                 startActivity(intent_find_flight);
+                break;
 
             case R.id.btn_my_booking:
                 Intent intent = new Intent(HomeActivity.this,GetARide.class);
                 startActivity(intent);
+                break;
 
            /* case R.id.btn_flight_booking:
 

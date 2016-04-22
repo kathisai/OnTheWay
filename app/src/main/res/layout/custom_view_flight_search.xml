@@ -268,5 +268,22 @@
         android:layout_marginRight="@dimen/dp_10"
         android:background="@color/grey_spiceflex_bg"
         android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <com.vl.ontheway.components.CustomTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Departure Time"
+           android:textColor="@color/light_gray"
+           android:padding="10dp"/>
+        <com.vl.ontheway.components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/departTime"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+    </LinearLayout>
 
 </LinearLayout>
