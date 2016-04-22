@@ -25,6 +25,7 @@ public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.Custo
         return null;
     }
 
+
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
         //FeedItem feedItem = feedItemList.get(i);

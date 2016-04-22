@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/red"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Choose your drive.."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+       android:layout_margin="30dp"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:text="Whats your Preference?"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+          android:textSize="12dp"
+        android:textStyle="italic"
+
+        android:text="Choose own car to drive alone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="12dp"
+        android:textStyle="italic"
+
+        android:text="Choose group car to share drive "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/BT_OwnCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Own car"
+        android:layout_margin="5dp"
+        android:background="@drawable/single_button"
+        android:textColor="#ffffff"
+         android:gravity="center"/>
+        <Button
+            android:id="@+id/BT_GroupCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+           android:text="Group car"
+            android:layout_margin="5dp"
+            android:background="@drawable/single_button"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
