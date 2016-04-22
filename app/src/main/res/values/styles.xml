@@ -229,9 +229,9 @@
         <item name="android:background">@color/white</item>
         <item name="android:padding">@dimen/dp_15</item>
     </style>
-
     <style name="Theme.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 
 </resources>

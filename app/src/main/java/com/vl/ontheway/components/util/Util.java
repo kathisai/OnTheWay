@@ -41,10 +41,7 @@ import com.vl.ontheway.R;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.SoapObject;
-import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.AndroidHttpTransport;
+
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.BufferedReader;
@@ -406,70 +403,70 @@ public class Util {
 	/*
 	 * opens a Soap Connection Using KSoap2
 	 */
-	public static SoapObject openSoapRequest(SoapObject request,
-											 String SOAP_ACTION, String SERVER_URL) {
-		SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(
-				SoapEnvelope.VER11);
-		soapEnvelope.implicitTypes = true;
-		soapEnvelope.dotNet = true;
-		SoapObject result = null;
-		if (Constants.LOG)
-			Log.d("Request", "" + request);
-		soapEnvelope.setOutputSoapObject(request);
-		AndroidHttpTransport aht = new AndroidHttpTransport(SERVER_URL);
-		aht.debug = true;
-		// SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-		// int storedPreference = preferences.getInt("storedInt", 0);
-
-		try {
-			if (Constants.LOG)
-				Log.d("request is", "" + request);
-			if (Constants.LOG)
-				Log.d("SOAP_ACTION::" + SOAP_ACTION, "SERVER_URL::"
-						+ SERVER_URL);
-			aht.call(SOAP_ACTION, soapEnvelope);
-			if (Constants.LOG)
-				Log.d("Request", "" + aht.requestDump);
-			result = (SoapObject) soapEnvelope.getResponse();
-			if (Constants.LOG)
-				Log.d("Response", "" + aht.responseDump);
-
-		} catch (UnknownHostException e) {
-			if (Constants.LOG)
-				Log.d("UnknownHostException", "" + e);
-			result = new SoapObject("", "");
-			result.addProperty(Constants.TEXT_FAULT,
-					Constants.ERROR_UNABLE_TO_CONNECT_SERVER);
-			if (Constants.LOG)
-				Log.d("Exception in com.vl.ontheway.components.util", e.getMessage());
-
-		} catch (IOException e) {
-
-			if (Constants.LOG)
-				Log.d("IOException", "" + e);
-			result = new SoapObject("", "");
-			result.addProperty(Constants.TEXT_FAULT, Constants.ERROR_IO);
-			e.printStackTrace();
-
-		} catch (XmlPullParserException e) {
-
-			if (Constants.LOG)
-				Log.d("XmlPullParserException", "" + e);
-			result = new SoapObject("", "");
-			result.addProperty(Constants.TEXT_FAULT,
-					Constants.ERROR_PARSER_EXCEPTION);
-			e.printStackTrace();
-
-		} catch (Exception e) {
-			if (Constants.LOG)
-				Log.d("Exception", "" + e);
-			result = new SoapObject("", "");
-			result.addProperty(Constants.TEXT_FAULT, Constants.ERROR_EXCEPTION);
-			e.printStackTrace();
-
-		}
-		return result;
-	}
+//	public static SoapObject openSoapRequest(SoapObject request,
+//											 String SOAP_ACTION, String SERVER_URL) {
+//		SoapSerializationEnvelope soapEnvelope = new SoapSerializationEnvelope(
+//				SoapEnvelope.VER11);
+//		soapEnvelope.implicitTypes = true;
+//		soapEnvelope.dotNet = true;
+//		SoapObject result = null;
+//		if (Constants.LOG)
+//			Log.d("Request", "" + request);
+//		soapEnvelope.setOutputSoapObject(request);
+//		AndroidHttpTransport aht = new AndroidHttpTransport(SERVER_URL);
+//		aht.debug = true;
+//		// SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+//		// int storedPreference = preferences.getInt("storedInt", 0);
+//
+//		try {
+//			if (Constants.LOG)
+//				Log.d("request is", "" + request);
+//			if (Constants.LOG)
+//				Log.d("SOAP_ACTION::" + SOAP_ACTION, "SERVER_URL::"
+//						+ SERVER_URL);
+//			aht.call(SOAP_ACTION, soapEnvelope);
+//			if (Constants.LOG)
+//				Log.d("Request", "" + aht.requestDump);
+//			result = (SoapObject) soapEnvelope.getResponse();
+//			if (Constants.LOG)
+//				Log.d("Response", "" + aht.responseDump);
+//
+//		} catch (UnknownHostException e) {
+//			if (Constants.LOG)
+//				Log.d("UnknownHostException", "" + e);
+//			result = new SoapObject("", "");
+//			result.addProperty(Constants.TEXT_FAULT,
+//					Constants.ERROR_UNABLE_TO_CONNECT_SERVER);
+//			if (Constants.LOG)
+//				Log.d("Exception in com.vl.ontheway.components.util", e.getMessage());
+//
+//		} catch (IOException e) {
+//
+//			if (Constants.LOG)
+//				Log.d("IOException", "" + e);
+//			result = new SoapObject("", "");
+//			result.addProperty(Constants.TEXT_FAULT, Constants.ERROR_IO);
+//			e.printStackTrace();
+//
+//		} catch (XmlPullParserException e) {
+//
+//			if (Constants.LOG)
+//				Log.d("XmlPullParserException", "" + e);
+//			result = new SoapObject("", "");
+//			result.addProperty(Constants.TEXT_FAULT,
+//					Constants.ERROR_PARSER_EXCEPTION);
+//			e.printStackTrace();
+//
+//		} catch (Exception e) {
+//			if (Constants.LOG)
+//				Log.d("Exception", "" + e);
+//			result = new SoapObject("", "");
+//			result.addProperty(Constants.TEXT_FAULT, Constants.ERROR_EXCEPTION);
+//			e.printStackTrace();
+//
+//		}
+//		return result;
+//	}
 
 	/**
 	 * set date to calendar object

@@ -20,7 +20,7 @@
             android:gravity="left"
             android:orientation="vertical" >
 
-            <com.vl.spicejet.components.CustomTextView
+            <com.vl.ontheway.components.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -43,7 +43,7 @@
                     android:gravity="left"
                     android:orientation="vertical" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.ontheway.components.CustomTextView
                         android:id="@+id/fromtv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                         android:textSize="@dimen/sp_42"
                         spicejet:textStyle="Regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.ontheway.components.CustomTextView
                         android:id="@+id/from_sub_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -79,14 +79,14 @@
                 android:textSize="@dimen/sp_13"
                 android:visibility="gone" />
 
-            <View
+          <!--  <View
                 android:id="@+id/onewaySeparator"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="@dimen/dp_10"
                 android:background="@color/grey_spiceflex_bg" />
-
-            <LinearLayout
+-->
+           <!-- <LinearLayout
                 android:id="@+id/oneway_ll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:orientation="vertical"
                 android:visibility="invisible" >
 
-                <com.vl.spicejet.components.CustomTextView
+                <com.vl.ontheway.components.CustomTextView
                     android:id="@+id/tv_depart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                     android:textSize="@dimen/sp_16"
                     spicejet:textStyle="light" />
 
-                <com.vl.spicejet.components.CustomTextView
+                <com.vl.ontheway.components.CustomTextView
                     android:id="@+id/tv_depart_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_20"
                     spicejet:textStyle="light" />
-            </LinearLayout>
+            </LinearLayout>-->
         </LinearLayout>
 
         <LinearLayout
@@ -129,7 +129,7 @@
                 android:layout_width="@dimen/dp_1"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1.2"
+                android:layout_weight="1"
                 android:background="@color/grey_spiceflex_bg" />
 
             <ImageView
@@ -147,7 +147,7 @@
                 android:layout_width="@dimen/dp_1"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="0.8"
+                android:layout_weight="1"
                 android:background="@color/grey_spiceflex_bg" />
         </LinearLayout>
 
@@ -160,7 +160,7 @@
             android:gravity="right"
             android:orientation="vertical" >
 
-            <com.vl.spicejet.components.CustomTextView
+            <com.vl.ontheway.components.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -182,7 +182,7 @@
                     android:gravity="center"
                     android:orientation="vertical" >
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.ontheway.components.CustomTextView
                         android:id="@+id/totv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
                         android:textSize="@dimen/sp_42"
                         spicejet:textStyle="Regular" />
 
-                    <com.vl.spicejet.components.CustomTextView
+                    <com.vl.ontheway.components.CustomTextView
                         android:id="@+id/to_sub_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -218,14 +218,14 @@
                 android:textSize="@dimen/sp_13"
                 android:visibility="gone" />
 
-            <View
+           <!-- <View
                 android:id="@+id/twowaySeparator"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="@dimen/dp_10"
                 android:background="@color/grey_spiceflex_bg" />
-
-            <LinearLayout
+-->
+            <!--<LinearLayout
                 android:id="@+id/twoway_ll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -237,7 +237,7 @@
                 android:paddingRight="@dimen/dp_5"
                 android:visibility="invisible" >
 
-                <com.vl.spicejet.components.CustomTextView
+                <com.vl.ontheway.components.CustomTextView
                     android:id="@+id/tv_retrun"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -247,7 +247,7 @@
                     android:textSize="@dimen/sp_16"
                     spicejet:textStyle="light" />
 
-                <com.vl.spicejet.components.CustomTextView
+                <com.vl.ontheway.components.CustomTextView
                     android:id="@+id/tv_retrun_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -256,7 +256,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_20"
                     spicejet:textStyle="light" />
-            </LinearLayout>
+            </LinearLayout>-->
         </LinearLayout>
     </LinearLayout>
 

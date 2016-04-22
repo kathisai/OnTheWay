@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_indicator_bar"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radio_group_flights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_twoway"
+                    style="@style/find_flight_radios_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_oneway_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="@string/twoway"
+                    android:textColor="@drawable/radio_text_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio_oneway"
+                    style="@style/find_flight_radios_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_twoway_selector"
+                    android:button="@null"
+                    android:text="@string/oneway"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="@dimen/sp_18" />
+            </RadioGroup>
+
+            <include layout="@layout/custom_view_flight_search" />
+
+            <LinearLayout
+                android:id="@+id/travelpicker_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_13"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="vertical" >
+
+                <com.vl.ontheway.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/travellers"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sp_16"
+                    spicejet:textStyle="light" />
+
+                <com.vl.ontheway.components.CustomTextView
+                    android:id="@+id/travellers_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/oneadult"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/flightbooking_dropdown" />
+            </LinearLayout>
+
+           <!-- <com.vl.ontheway.components.CustomButton
+                android:id="@+id/find_flights"
+                style="@style/button_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="@dimen/dp_25"
+                android:text="@string/find_flights"
+                spicejet:textStyle="semi-bold" />-->
+
+            <com.vl.ontheway.components.CustomTextView
+                android:id="@+id/take_a_ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_20"
+                spicejet:textStyle="light"
+                android:text="zhdfkzdghfgh"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
