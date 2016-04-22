@@ -7,12 +7,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import java.util.List;
+
 /**
  * Created by skathi on 4/22/2016.
  */
 public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.CustomViewHolder>  {
     Context context;
-
+    private   Integer[] imageIDs = {
+            R.drawable.food1,
+            R.drawable.food2,
+            R.drawable.food3,
+            R.drawable.food4,
+            R.drawable.food5,
+    };
     public HotMealsAdapter(Context context) {
         this.context=context;
     }
@@ -37,7 +45,7 @@ public class HotMealsAdapter  extends RecyclerView.Adapter<HotMealsAdapter.Custo
                 .into(holder.imageView);*/
 
 
-
+        holder.mFoodImage.setImageResource(imageIDs[position]);
     }
 
     @Override
