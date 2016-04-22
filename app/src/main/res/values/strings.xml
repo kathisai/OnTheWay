@@ -611,4 +611,8 @@
     <string name="cancel_current_booking_">Cancel Current Booking!</string>
     <string name="cancel_booking_msg">Almost Done! Would you still want to cancel this session?</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_get_aride">GetARide</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
