@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/home_mybooking"
+                    android:drawableTop="@drawable/addons"
                     android:text="@string/my_booking"
                     android:visibility="visible" />
             </LinearLayout>

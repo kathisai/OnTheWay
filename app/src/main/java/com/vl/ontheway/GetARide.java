@@ -45,6 +45,7 @@ public class GetARide extends AppCompatActivity implements View.OnClickListener 
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            finish();
             return true;
         }
 

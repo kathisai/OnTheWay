@@ -16,6 +16,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.vl.ontheway.components.CustomButton;
 import com.vl.ontheway.components.CustomEditText;
+import com.vl.ontheway.components.CustomTextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,9 +36,13 @@ public class LoginActivity extends Activity {
         View userInclude = (View)findViewById(R.id.include_user);
         View paswdInclude = (View)findViewById(R.id.include_pswd);
         CustomButton sign_in = (CustomButton) findViewById(R.id.tv_sign_in);
+        CustomTextView username_tv = (CustomTextView)userInclude.findViewById(R.id.fieldname_et);
+        CustomTextView password_tv = (CustomTextView)paswdInclude.findViewById(R.id.fieldname_et);
+
         user_name = (CustomEditText)userInclude.findViewById(R.id.fieldvalue_et);
          pwd = (CustomEditText)paswdInclude.findViewById(R.id.fieldvalue_et);
-
+        username_tv.setText("UserName");
+        password_tv.setText("Password");
         user_name.setHint("UserName");
         pwd.setHint("Password");
 
@@ -105,6 +110,7 @@ public class LoginActivity extends Activity {
        String stsus = response.getString("Status").toString();
         if(stsus.contains("logged in successfully")){
             Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+            intent.putExtra("UserId",response.getString("UserID").toString());
             startActivity(intent);
         }else{
             Toast.makeText(LoginActivity.this,""+stsus.toString(),Toast.LENGTH_SHORT).show();

@@ -55,7 +55,7 @@
 
             <include layout="@layout/custom_view_flight_search" />
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:id="@+id/travelpicker_lay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/flightbooking_dropdown" />
-            </LinearLayout>
+            </LinearLayout>-->
 
            <!-- <com.vl.ontheway.components.CustomButton
                 android:id="@+id/find_flights"
@@ -105,7 +105,7 @@
                 android:id="@+id/bordingPass"
                 />
 
-            <com.vl.ontheway.components.CustomTextView
+            <TextView
                 android:id="@+id/take_a_ride"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,8 +113,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/red"
                 android:textSize="@dimen/sp_20"
-                spicejet:textStyle="light"
-                android:text="zhdfkzdghfgh"/>
+                android:text="Do you know you can car pool? Interested?"/>
         </LinearLayout>
     </ScrollView>
 

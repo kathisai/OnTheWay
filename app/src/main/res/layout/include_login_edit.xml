@@ -17,13 +17,13 @@
         android:paddingBottom="@dimen/dp_10"
         android:paddingTop="@dimen/dp_10" >
 
-        <ImageView
+      <!--  <ImageView
             android:id="@+id/user_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/dp_3"
-            android:background="@drawable/username" />
+            android:background="@drawable/username" />-->
 
         <com.vl.ontheway.components.CustomTextView
             android:id="@+id/fieldname_et"

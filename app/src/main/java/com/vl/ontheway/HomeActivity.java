@@ -12,6 +12,7 @@ import android.view.animation.AnimationUtils;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
+    String UserId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_my_booking).setOnClickListener(this);
         findViewById(R.id.btn_hot_deals).setOnClickListener(this);
 
+        UserId = getIntent().getExtras().getString("UserId");
         startAnimation();
     }
 
@@ -84,11 +86,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_flight_booking:
                 Intent intent_find_flight = new Intent(HomeActivity.this,FindFlightsActivity.class);
+                intent_find_flight.putExtra("UserId",UserId);
                 startActivity(intent_find_flight);
                 break;
 
             case R.id.btn_my_booking:
                 Intent intent = new Intent(HomeActivity.this,GetARide.class);
+                intent.putExtra("UserId",UserId);
                 startActivity(intent);
                 break;
 
