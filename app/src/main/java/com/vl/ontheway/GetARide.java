@@ -26,7 +26,7 @@ public class GetARide extends AppCompatActivity implements View.OnClickListener 
         getMenuInflater().inflate(R.menu.menu_get_aride, menu);
         departuretime = (CustomTextView) findViewById(R.id.depTime);
         location = (CustomTextView) findViewById(R.id.location);
-        confirmBtn = (CustomTextView) findViewById(R.id.confirmText);
+        confirmBtn = (CustomTextView) findViewById(R.id.confirmTV);
         confirmBtn.setOnClickListener(this);
         return true;
     }
@@ -54,7 +54,7 @@ public class GetARide extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.confirmText:
+            case R.id.confirmTV:
         }
     }
 }

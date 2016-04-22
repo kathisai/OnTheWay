@@ -222,7 +222,7 @@
     </LinearLayout>
 
     <com.vl.ontheway.components.CustomTextView
-        android:id="@+id/linearLayout2"
+        android:id="@+id/confirmTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
@@ -236,7 +236,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout2"
+        android:layout_below="@+id/confirmTV"
         android:layout_centerHorizontal="true"
         android:src="@drawable/unlike" />
 
