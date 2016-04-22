@@ -93,8 +93,9 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0.6"
-                android:src="@drawable/anc_checked" />
+                android:src="@drawable/checkbox" />
 
             <com.vl.ontheway.components.CustomTextView
                 android:layout_width="0dp"
@@ -127,8 +128,9 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0.6"
-                android:src="@drawable/anc_checked" />
+                android:src="@drawable/checkbox" />
 
             <com.vl.ontheway.components.CustomTextView
                 android:layout_width="0dp"
@@ -161,8 +163,9 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0.6"
-                android:src="@drawable/anc_checked" />
+                android:src="@drawable/checkbox" />
 
             <com.vl.ontheway.components.CustomTextView
                 android:layout_width="0dp"
@@ -195,8 +198,9 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0.6"
-                android:src="@drawable/anc_checked" />
+                android:src="@drawable/checkbox" />
 
             <com.vl.ontheway.components.CustomTextView
                 android:layout_width="0dp"
@@ -217,15 +221,25 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
+    <com.vl.ontheway.components.CustomTextView
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:background="@drawable/greyfield"
+        android:background="@color/grey_divider"
         android:gravity="center"
         android:text="One Click Away" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/depTime"
+        android:layout_toRightOf="@+id/depTime"
+        android:src="@drawable/un_like" />
 
 
 </RelativeLayout>
