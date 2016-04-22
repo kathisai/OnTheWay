@@ -99,6 +99,11 @@
                 android:layout_marginTop="@dimen/dp_25"
                 android:text="@string/find_flights"
                 spicejet:textStyle="semi-bold" />-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bordingPass"
+                />
 
             <com.vl.ontheway.components.CustomTextView
                 android:id="@+id/take_a_ride"

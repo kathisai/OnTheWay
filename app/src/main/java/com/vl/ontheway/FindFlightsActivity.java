@@ -13,9 +13,13 @@ public class FindFlightsActivity extends AppCompatActivity {
     TextView toolbar_title;
 
     CustomTextView fromtv_code ;
-    CustomTextView to_sub_tv_code ;
-    CustomTextView tv_depart ;
-    CustomTextView fromtvCode ;
+    CustomTextView from_sub_tv;
+
+    CustomTextView totv_code;
+    CustomTextView to_sub_tv;
+
+
+    CustomTextView departTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +29,14 @@ public class FindFlightsActivity extends AppCompatActivity {
         back_button = (ImageView)findViewById(R.id.img_menu);
         toolbar_title = (TextView)findViewById(R.id.toolbar_title);
 
-        toolbar_title.setText("gdhfgj");
+        toolbar_title.setText("Flight Booking");
 
+        fromtv_code = (CustomTextView)findViewById(R.id.fromtv);
+        from_sub_tv = (CustomTextView)findViewById(R.id.from_sub_tv);
+        totv_code = (CustomTextView)findViewById(R.id.totv);
+        to_sub_tv = (CustomTextView)findViewById(R.id.to_sub_tv);
 
+        departTime = (CustomTextView)findViewById(R.id.departTime);
 
 
 
