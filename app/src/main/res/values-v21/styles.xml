@@ -2,7 +2,9 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
     -->
 
 
@@ -15,7 +17,7 @@
         <item name="windowNoTitle">true</item>
         <item name="title">@string/empty_string</item>
         <item name="android:displayOptions">showHome|useLogo</item>
-    	<item name="displayOptions">showHome|useLogo</item>
+        <item name="displayOptions">showHome|useLogo</item>
         <item name="colorPrimary">@color/app_theme_red</item>
         <item name="colorPrimaryDark">@color/app_theme_red</item>
         <item name="android:navigationBarColor">@color/white</item>
@@ -51,7 +53,7 @@
     <!-- <item name="@android:textColor">@android:color/black</item> -->
     <!-- </style> -->
 
-   <style name="login_buttons_theme">
+    <style name="login_buttons_theme">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/sp_16</item>
         <item name="android:gravity">center</item>
@@ -91,9 +93,9 @@
     </style>
 
 
-       <style name="MyCustomDialog" parent="Base.Theme.AppCompat.Light.Dialog">
-    <item name="android:windowNoTitle">true</item>
-    <item name="windowActionBar">false</item>
-</style>
+    <style name="MyCustomDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
 </resources>

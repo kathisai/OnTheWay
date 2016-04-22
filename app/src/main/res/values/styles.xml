@@ -2,7 +2,12 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
     -->
 
     <style name="MyTheme" parent="android:Theme.Light">
@@ -157,7 +162,7 @@
         <item name="android:background">@color/white</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-    
+
     <style name="addons_segments">
         <item name="android:textColor">@color/navigation_text_color</item>
         <item name="android:textSize">@dimen/sp_18</item>
@@ -166,7 +171,7 @@
         <item name="android:background">@color/cream_grey</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-    
+
     <style name="itinerary_headers">
         <item name="android:textColor">@color/navigation_text_color</item>
         <item name="android:textSize">@dimen/sp_17</item>
@@ -224,5 +229,9 @@
         <item name="android:background">@color/white</item>
         <item name="android:padding">@dimen/dp_15</item>
     </style>
+
+    <style name="Theme.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
