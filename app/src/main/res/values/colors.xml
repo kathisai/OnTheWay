@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="login_bottom_bg">#F6F6F6</color>
+    <color name="blue_divider">#AAE3F8</color>
+    <color name="orange">#FCE7B4</color>
+    <color name="red_divider">#EDB7B9</color>
+    <color name="reg_reqtext_color">#818181</color>
+    <color name="reg_header_color">#1c252c</color>
+    <color name="reg_field_color">#4b4b4b</color>
+    <color name="searchresults_text">#262626</color>
+    <color name="manage_booking_header">#282828</color>
+    <color name="flight_status_text_color">#2b2d2e</color>
+    <color name="flight_status_red_color">#3c3c3c</color>
+    <color name="gray_flight_schedule">#7f8080</color>
+    <color name="login_edittext_color">#c8c8c8</color>
+    <color name="manage_booking_option2_background">#ebeae8</color>
+    <color name="light_gray">#758080</color>
+    <color name="manage_booking_details_header">#f2f2f2</color>
+    <color name="booking_details_input">#7f8080</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="cream_grey">#F1F1F1</color>
+    <color name="auto_tv_color">#2c2d2f</color>
+    <color name="auto_tv_bgcolor">#fbfbfb</color>
+    <color name="search_header_color">#f2f2f2</color>
+    <color name="light_yellow">#fffef8</color>
+    <color name="grey_spiceflex_bg">#ececec</color>
+    <color name="devider">#dedede</color>
+    <color name="divider_grey">#d1d1d1</color>
+    <color name="red_trans">#66FF0000</color>
+    <color name="darkgreen">#7dac80</color>
+    <color name="yellow">#e2a123</color>
+    <color name="red">#ca314d</color>
+    <color name="ash">#8c8c8c</color>
+    <color name="ash_1">#454545</color>
+    <color name="light_ash">#d3d3d3</color>
+    <color name="dark_ash">#777777</color>
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="pink">#ff69b4</color>
+    <color name="transparent_black">#CC000000</color>
+    <color name="red_heading">#cc0001</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <!-- navigation -->
+    <color name="divider_color">#e2e2e2</color>
+    <color name="navigation_text_color">#282828</color>
+    <color name="light_header">#e5e5e5</color>
+    <color name="app_theme_red">#d9191e</color>
+    <color name="flight_duration_color">#878C91</color>
+    <!-- Passenger line highlight -->
+    <color name="passenger_highlight">#fdd8da</color>
+    <color name="login_divider">#ae0007</color>
+    <color name="light_orange">#fd9b14</color>
+    <color name="disablecolor">#07000000</color>
+    <color name="gray">#bfbfbf</color>
+	<color name="home_divider_color">#f4d3d5</color>
+	<color name="notification_box_color">#F1F3F4</color>
+	<color name="grey_divider">#C0C0C0</color>
+	<color name="passenger_item_green_bg">#3CAF5F</color>
+	<color name="passenger_item_green_border">#2A8C2E</color>
+	<color name="passenger_item_grey_border">#979797</color>
+    <color name="grey_text">#5A5A5A</color>
+</resources>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ViewStub
+            android:id="@+id/flight_details_stub_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/include_cancel_flight"
+            android:layout_marginBottom="@dimen/dp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_24"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <include
+            android:id="@+id/incl_addon_segment"
+            layout="@layout/include_addon_segment"
+            android:visibility="gone" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/checkin_error_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <include
+            android:id="@+id/seperator1"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/spicemax"
+            style="@style/addons_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/addon_spicemax"
+            android:drawableRight="@drawable/addon_minus"
+            android:text="@string/spice_max" />
+
+        <include
+            android:id="@+id/seperator2"
+            layout="@layout/seperator" />
+
+        <!-- <include -->
+        <!-- android:id="@+id/include_spicmax" -->
+        <!-- layout="@layout/spicemax" /> -->
+
+        <FrameLayout
+            android:id="@+id/spice_seat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+        </FrameLayout>
+
+        <include
+            android:id="@+id/seperator3"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/chooseseat"
+            style="@style/addons_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/disablecolor"
+            android:drawableLeft="@drawable/addon_chooseseat"
+            android:drawableRight="@drawable/addon_plus"
+            android:enabled="false"
+            android:text="@string/chooseseat" />
+
+        <include
+            android:id="@+id/seperator4"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/pre_select_seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_header_color"
+            android:padding="@dimen/dp_5"
+            android:text="Pre-Select your preferred seat"
+            android:textColor="@color/flight_duration_color"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <include
+            android:id="@+id/seperator5"
+            layout="@layout/seperator" />
+
+        <FrameLayout
+            android:id="@+id/seat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/hotmeals"
+            style="@style/addons_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/disablecolor"
+            android:drawableLeft="@drawable/addon_hotmeals"
+            android:drawableRight="@drawable/addon_plus"
+            android:enabled="false"
+            android:text="@string/hotmeals" />
+
+        <include
+            android:id="@+id/seperator6"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/pre_select_meals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_header_color"
+            android:padding="@dimen/dp_5"
+            android:text="Pre-Select your preferred meals"
+            android:textColor="@color/flight_duration_color"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <FrameLayout
+            android:id="@+id/meal_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <include
+            android:id="@+id/seperator7"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/excessbage"
+            style="@style/addons_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/addon_excessbaggage"
+            android:drawableRight="@drawable/addon_plus"
+            android:text="@string/excess_baggage" />
+
+        <include
+            android:id="@+id/seperator8"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/pre_select_baggage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_header_color"
+            android:padding="@dimen/dp_5"
+            android:text="Pre-Select your preferred baggage"
+            android:textColor="@color/flight_duration_color"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <FrameLayout
+            android:id="@+id/baggege_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <include
+            android:id="@+id/seperator9"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/spiceAssurance"
+            style="@style/addons_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/spiceassurance"
+            android:drawableRight="@drawable/addon_plus"
+            android:text="@string/spice_assurance" />
+
+        <include
+            android:id="@+id/seperator10"
+            layout="@layout/seperator" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/pre_select_assurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_header_color"
+            android:padding="@dimen/dp_5"
+            android:text="@string/assurance_text"
+            android:textColor="@color/flight_duration_color"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone"
+            spicejet:textStyle="regular" />
+
+        <ListView
+            android:id="@+id/spiceAssuranceContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

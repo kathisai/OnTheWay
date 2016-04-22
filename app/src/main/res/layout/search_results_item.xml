@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitetextfield"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/flightname"
+        style="@style/search_results_flight_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/srcflight_time"
+            style="@style/search_results_flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_no_hopping_flights"
+            style="@style/search_results_flight_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/destflight_time"
+            style="@style/search_results_flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_flight_duration"
+            style="@style/search_results_flight_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/flight_price"
+            style="@style/search_results_flight_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_srchresults_redrupee"
+            android:drawablePadding="@dimen/dp_10" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/saleTag"
+            style="@style/search_results_flight_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/dp_10"
+            android:visibility="gone" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_refundable"
+            style="@style/search_results_flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/non_refundable"
+            android:textSize="@dimen/sp_11"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

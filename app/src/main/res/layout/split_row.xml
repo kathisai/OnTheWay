@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/separator"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_3"
+            android:textColor="@color/reg_field_color"
+            spicejet:textStyle="light" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/tv_rupee"
+            android:background="@color/app_theme_red"
+            android:visibility="invisible" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_rupee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_fare_value"
+            android:drawableLeft="@drawable/ic_srchresults_redrupee"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_3"
+            android:textColor="@color/reg_header_color"
+            android:visibility="invisible"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_fare_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_3"
+            android:text="4,740.00"
+            android:textColor="@color/reg_header_color"
+            spicejet:textStyle="regular" />
+    </RelativeLayout>
+
+    <!--
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_register_textheader"
+        android:padding="@dimen/dp_5" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_3"
+               android:paddingTop="@dimen/dp_3"
+            android:text="Net Total"
+            android:textColor="@color/app_theme_red"
+            spicejet:textStyle="light" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/nettotal"
+            android:background="@color/app_theme_red" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/nettotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_srchresults_redrupee"
+             android:paddingBottom="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_3"
+               android:paddingTop="@dimen/dp_3"
+            android:text="4,740.00"
+            android:textColor="@color/app_theme_red"
+            spicejet:textStyle="light" />
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

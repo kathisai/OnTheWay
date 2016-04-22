@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_register_textheader"
+        android:gravity="center_vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:text="@string/review_and_pay"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_dollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_amount"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="$"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:text="11,600"
+            android:textColor="@color/red_heading"
+            android:textSize="@dimen/sp_20"
+            spicejet:textStyle="regular" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_credit_debit_card"
+            style="@style/find_flight_radios_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_oneway_selector"
+            android:button="@null"
+            android:text="@string/credeit_debit_card"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="@dimen/sp_10" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <RadioButton
+            android:id="@+id/radio_net_banking"
+            style="@style/find_flight_radios_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_twoway_selector"
+            android:button="@null"
+            android:text="@string/net_banking"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="@dimen/sp_10" />
+
+        <RadioButton
+            android:id="@+id/radio_credit_shell"
+            style="@style/find_flight_radios_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_twoway_selector"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/credit_shell"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="@dimen/sp_10" />
+    </RadioGroup>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_register_textheader"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="@string/your_credit_amount"
+        android:textColor="@color/red_heading"
+        android:textSize="@dimen/sp_15"
+        spicejet:textStyle="regular" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:text="@string/funds_available_use"
+            android:textColor="@color/booking_details_input"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_available_amount"
+            android:gravity="center_vertical"
+            android:text=":"
+            android:textColor="@color/booking_details_input"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_available_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_15"
+            android:text="7,604.00 INR"
+            android:textColor="@color/manage_booking_header"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="regular" />
+    </RelativeLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:drawableRight="@drawable/ic_register_mandatory"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="@string/amunt_spend"
+        android:textColor="@color/booking_details_input"
+        android:textSize="@dimen/sp_15"
+        spicejet:textStyle="regular" />
+
+    <com.vl.spicejet.components.CustomEditText
+        android:id="@+id/tv_amount_spend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/padding_large"
+        android:singleLine="true"
+        android:text="7,200.00 INR"
+        android:textColor="@color/manage_booking_header"
+        android:textSize="@dimen/sp_13"
+        spicejet:textStyle="regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"  android:id="@+id/ll_booking_terms" >
+
+        <CheckBox
+            android:id="@+id/no_meals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector"
+            android:paddingLeft="@dimen/padding_checkbox"
+            android:text="@string/accept"
+            android:textColor="@color/searchresults_text"
+            android:textSize="@dimen/sp_13" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_booking_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:text="@string/booking_terms"
+            android:textColor="@color/red_heading"
+            android:textSize="@dimen/sp_13"
+            spicejet:textStyle="regular" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/Button_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/custombutton"
+        android:paddingLeft="@dimen/dp_40"
+        android:paddingRight="@dimen/dp_40"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        spicejet:textStyle="regular" >
+    </com.vl.spicejet.components.CustomButton>
+
+</LinearLayout>

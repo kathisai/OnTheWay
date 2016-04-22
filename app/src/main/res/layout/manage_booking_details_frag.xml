@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/incl_addon_segment"
+        layout="@layout/include_addon_segment"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incl_addon_segment"
+        layout="@layout/include_booking_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/dp_10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/addonsLayout"
+                layout="@layout/addon_exap_layout" />
+
+            <include layout="@layout/seperator" />
+
+            <LinearLayout
+                android:id="@+id/change_flight_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_managebooking_changeflight" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/change_flight_tv"
+                    style="@style/addons_headers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/change_flight"
+                    spicejet:textStyle="light" />
+
+                <CheckBox
+                    android:id="@+id/change_flight_chkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/anc_arrow"
+                    android:button="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <include layout="@layout/seperator" />
+
+            <LinearLayout
+                android:id="@+id/booking_cancel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_managebooking_cancel" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/booking_cancel_tv"
+                    style="@style/addons_headers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/cancel_flight"
+                    spicejet:textStyle="light" />
+
+                <CheckBox
+                    android:id="@+id/booking_cancel_chkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/anc_arrow"
+                    android:button="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

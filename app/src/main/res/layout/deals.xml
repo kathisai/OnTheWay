@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <com.vl.spicejet.components.CustomButton
+        style="@style/button_large"
+        android:id="@+id/book_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:text="@string/book_now"
+        android:visibility="gone" 
+        spicejet:textStyle="semi-bold"/>
+    
+    <ImageView
+        android:id="@+id/deals_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/book_btn"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/empty_string"
+        android:scaleType="fitXY"
+        />
+    
+     <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/comingSoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:text="@string/comingSoonText"
+        android:textColor="@color/app_theme_red"
+        android:visibility="gone" />
+
+    
+
+</RelativeLayout>

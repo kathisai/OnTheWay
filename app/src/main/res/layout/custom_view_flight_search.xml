@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/from"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/sp_18"
+                spicejet:textStyle="light" />
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/dp_20" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/fromtv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/app_theme_red"
+                        android:textSize="@dimen/sp_42"
+                        spicejet:textStyle="Regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/from_sub_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_24"
+                        spicejet:textStyle="Regular" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <AutoCompleteTextView
+                android:id="@+id/from_atv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:completionThreshold="1"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_13"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/onewaySeparator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/grey_spiceflex_bg" />
+
+            <LinearLayout
+                android:id="@+id/oneway_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_depart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/depart"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sp_16"
+                    spicejet:textStyle="light" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_depart_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20"
+                    spicejet:textStyle="light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/twowayarrow1"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.2"
+                android:background="@color/grey_spiceflex_bg" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/flightbooking_arrows" />
+
+            <View
+                android:id="@+id/twowayarrow2"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.8"
+                android:background="@color/grey_spiceflex_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/to"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/sp_18"
+                spicejet:textStyle="light" />
+
+            <ViewFlipper
+                android:id="@+id/return_flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/dp_20" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/totv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/app_theme_red"
+                        android:textSize="@dimen/sp_42"
+                        spicejet:textStyle="Regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/to_sub_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_24"
+                        spicejet:textStyle="Regular" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <AutoCompleteTextView
+                android:id="@+id/to_atv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:completionThreshold="1"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_13"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/twowaySeparator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/grey_spiceflex_bg" />
+
+            <LinearLayout
+                android:id="@+id/twoway_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp_5"
+                android:visibility="invisible" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_retrun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/returnon"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sp_16"
+                    spicejet:textStyle="light" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_retrun_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20"
+                    spicejet:textStyle="light" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/date_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/grey_spiceflex_bg"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/top_indicator_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        layout="@layout/top_booking_inidicator_bar" />
+
+    <RadioGroup
+        android:id="@+id/addons_rg_flights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/addon_outbound"
+            style="@style/find_flight_radios_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_oneway_selector"
+            android:button="@null"
+            android:checked="true"
+            android:text="DEL-HYD"
+            android:textColor="@drawable/radio_text_selector" />
+
+        <RadioButton
+            android:id="@+id/addon_inbound"
+            style="@style/find_flight_radios_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_twoway_selector"
+            android:button="@null"
+            android:text="HYD-DEL"
+            android:textColor="@drawable/radio_text_selector" />
+    </RadioGroup>
+
+    <com.vl.spicejet.components.NonSwipeableViewPager
+        android:id="@+id/addons_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1" >
+    </com.vl.spicejet.components.NonSwipeableViewPager>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/addons_continue"
+        style="@style/button_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:text="@string/continue_text"
+        spicejet:textStyle="semi-bold" />
+
+    <include
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_split_layout" />
+
+</LinearLayout>

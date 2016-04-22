@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/checkbox_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <CheckBox
+            android:id="@+id/cb_flight_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:button="@drawable/top_flight_search_cb_selector"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:enabled="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_arrow_divider" />
+
+        <CheckBox
+            android:id="@+id/cb_flight_booking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:button="@drawable/top_flight_booking_cb_selector"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:enabled="false" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_arrow_divider" />
+        
+
+        <CheckBox
+            android:id="@+id/cb_flight_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:button="@drawable/top_flight_user_cb_selector"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:enabled="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_arrow_divider" />
+        
+        
+        <CheckBox
+            android:id="@+id/cb_flight_addons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:button="@drawable/top_flight_baggage_cb_selector"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:enabled="false" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_arrow_divider" />
+        
+
+        <CheckBox
+            android:id="@+id/cb_flight_payment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:button="@drawable/top_flight_payment_cb_selector"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/grey_divider" />
+
+</LinearLayout>

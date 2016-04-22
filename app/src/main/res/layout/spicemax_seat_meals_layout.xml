@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/tv_seats_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_header"
+                android:padding="@dimen/dp_10"
+                android:text="@string/seatss"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_15"
+                spicejet:textStyle="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_grey" />
+
+            <FrameLayout
+                android:id="@+id/spicemax_seats_frag_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/tv_meals_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_header"
+                android:padding="@dimen/dp_10"
+                android:text="@string/mealss"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_15"
+                spicejet:textStyle="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_grey" />
+
+            <FrameLayout
+                android:id="@+id/spicemax_meals_frag_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/btn_confirm"
+        style="@style/button_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:enabled="false"
+        android:text="@string/confirm" />
+
+    <include
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_split_layout" />
+
+</LinearLayout>

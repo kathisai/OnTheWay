@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vl.spicejet.components.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_flights_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/auto_tv_bgcolor"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_10"
+    android:text="@string/no_flights_avaliable"
+    android:textColor="@color/reg_header_color"
+    android:textSize="@dimen/sp_14"
+    spicejet:textStyle="regular" />

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_yellow"
+    android:padding="@dimen/dp_10"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:id="@+id/ll_checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/cb_check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_selector"
+            android:paddingLeft="@dimen/padding_checkbox"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_passenger_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/view_dummy"
+        android:layout_toRightOf="@+id/ll_checkin"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/searchresults_text"
+        android:textSize="@dimen/sp_15"
+        spicejet:textStyle="regular" />
+
+    <View
+        android:id="@+id/view_dummy"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/seat_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toRightOf="@+id/view_dummy"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_3"
+        android:text="2D"
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_15"
+        android:visibility="visible"
+        spicejet:textStyle="regular" />
+
+    <ImageView
+        android:id="@+id/img_hotmeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/seat_name_tv"
+        android:contentDescription="@string/empty_string"
+        android:src="@drawable/addon_hotmeals"
+        android:visibility="gone" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/spice_max_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@+id/img_rightarrow"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="@string/click_here_meal"
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_15"
+        android:visibility="visible"
+        spicejet:textStyle="regular" />
+
+    <ImageView
+        android:id="@+id/img_rightarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/empty_string"
+        android:src="@drawable/ic_myflights_arrow"
+        android:visibility="visible" />
+
+</RelativeLayout>

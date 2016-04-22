@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_register_mandatory"
+        android:drawablePadding="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:text="@string/requiredfields"
+        android:textColor="@color/reg_reqtext_color"
+        android:textSize="@dimen/sp_12"
+        spicejet:textStyle="light" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="@string/email"
+        android:textColor="@color/reg_reqtext_color"
+        android:textSize="@dimen/sp_13"
+        spicejet:textStyle="light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomEditText
+            android:id="@+id/emailaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:hint="@string/email"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/padding_large"
+            android:singleLine="true"
+            android:text="sardar@gmail.com"
+            android:textColor="@color/manage_booking_header"
+            android:textSize="@dimen/sp_13"
+            spicejet:textStyle="regular" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp_5"
+            android:src="@drawable/ic_register_mandatory" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="@string/phone_no"
+        android:textColor="@color/reg_reqtext_color"
+        android:textSize="@dimen/sp_13"
+        spicejet:textStyle="light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <com.vl.spicejet.components.CustomEditText
+            android:id="@+id/phonemumber_countrycode"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/padding_large"
+            android:singleLine="true"
+            android:text="+91"
+            android:textColor="@color/manage_booking_header"
+            android:textSize="@dimen/sp_13"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomEditText
+            android:id="@+id/phonemumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="2.3"
+            android:hint="@string/phone_no"
+            android:maxLength="14"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/padding_large"
+            android:singleLine="true"
+            android:text="9894980005"
+            android:textColor="@color/manage_booking_header"
+            android:textSize="@dimen/sp_13"
+            spicejet:textStyle="regular" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_register_mandatory" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal" >
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/Button_continue"
+            style="@style/button_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="@string/continue_text" >
+        </com.vl.spicejet.components.CustomButton>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/no_meals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_passenger"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_5"
+        android:button="@drawable/checkbox_selector"
+        android:paddingLeft="@dimen/padding_checkbox"
+        android:text="@string/nomeals_selection"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar_bg"
+        android:gravity="left"
+        android:padding="@dimen/dp_10"
+        android:singleLine="true"
+        android:text="@string/upgrade_to_spicemax"
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_20"
+        app:textStyle="regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spicemax"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/sp_18" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:text="@string/maximize_experience"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/spicemaxPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:text="@string/rs500"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/moreleg"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/priority_checkin"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/Complimentarymealbeverage"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/prioraty_baggeg"
+            android:textColor="@color/navigation_text_color"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/light_header"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/spicemax_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/light_header"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <include layout="@layout/fragment_spiceflex_upgrade" />
+
+</LinearLayout>

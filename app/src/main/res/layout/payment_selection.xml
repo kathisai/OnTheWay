@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/meal_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_3"
+        android:text="Please select payment type"
+        android:textColor="@color/reg_reqtext_color"
+        android:textSize="@dimen/sp_13"
+        app:textStyle="regular" />
+  
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:orientation="horizontal" 
+    android:weightSum="2">
+
+  <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/btn_payu"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_weight="1"
+        android:background="@drawable/buttons_with_rounded_red_bg"
+        android:gravity="center"
+        android:lines="2"
+         android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_3"
+        android:text="@string/payu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        app:textStyle="regular" />
+  
+  
+  <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/btn_yes_bank"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_weight="1"
+        android:background="@drawable/buttons_with_rounded_red_bg"
+         android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_3"
+        android:text="@string/yes_bank"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        app:textStyle="regular" />
+</LinearLayout>
+</LinearLayout>

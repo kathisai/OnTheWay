@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:orientation="horizontal" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/changefee"
+        android:layout_width="@dimen/padding_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="conviencefee"
+        android:textColor="@color/reg_header_color"
+        android:textSize="@dimen/sp_15" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:text=":"
+        android:textColor="@color/reg_header_color" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/change_price"
+        android:layout_width="@dimen/padding_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:text="200"
+        android:textColor="@color/reg_field_color"
+        android:textSize="@dimen/sp_15" />
+
+</LinearLayout>

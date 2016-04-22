@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpiceJet</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="requiredfields">Marked fields are required</string>
+    <string name="login_info">Login</string>
+    <string name="userid">Username</string>
+    <string name="reenter_pwd">Re-enter password</string>
+    <string name="sing_in">Sign in</string>
+    <string name="sing_up">Don\'t have account? Sign up</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="sign_in_with">Or Sign in with</string>
+    <string name="newsletterconfirmation">I prefer not to receive future communication and newsletter from SpiceJet.</string>
+    <string name="register">Registration</string>
+    <string name="restpwd">Reset Password</string>
+    <string name="empty_string"></string>
+    <string name="forgot_password">Forgot your Password?</string>
+    <string name="sign_text">Sign in your account</string>
+    <string name="oneway">One Way</string>
+    <string name="twoway">Round Trip</string>
+    <string name="adult">ADULT</string>
+    <string name="child">CHILD</string>
+    <string name="infant">INFANT</string>
+    <string name="adult_age">>12 Years</string>
+    <string name="child_age">2-11 Years</string>
+    <string name="infant_age"> &lt;2 Years</string>
+    <string name="find_flights">Search Flights</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="returnon">RETURN ON</string>
+    <string name="depart">DEPART ON</string>
+    <string name="max_passinger_alert">You are allowed a maximum of 9 passengers per booking online If your party is larger than this, please call our reservation center.</string>
+    <string name="infant_greatercount">If you wish to book a greater number of infats than Adults, Please contact our reservation center for possible arrangements</string>
+    <string name="from_to_check">Please select From and To Locations</string>
+    <string name="networkconnection_check">Please check your network connection</string>
+    <string name="no_network_connection">Network Connection not available. Please connect to network and try again.</string>
+    <string name="no_cities_list">Error retrieving Cities List. Please try again.</string>
+    <string name="error_search_results">Error retrieving Search Results. Please try again.</string>
+    <string name="cancel_alert">Going back to previous booking step will cause the subsequent steps to be canceled. Are you sure you want to continue?</string>
+    <string name="no_flights_avaliable">No flights available for this date</string>
+    <string name="error_empty_pnr">Please enter PNR</string>
+    <string name="error_showing_flights">Error showing flights, please try again</string>
+    <string name="server_busy">Unable to connect to server, please try after some time.</string>
+
+    <string-array name="facebook_array">
+        <item>User Profile</item>
+        <item>Post Message</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Update Story</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="twitter_array">
+        <item>User Profile</item>
+        <item>Send Tweet</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="linkedin_array">
+        <item>User Profile</item>
+        <item>Post an Update</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Career</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <!-- Register Screen Validations -->
+    <string name="firstname_valid">First Name shouldn\'t be empty and not more than 32 characters.</string>
+    <string name="lastname_valid">Last Name shouldn\'t be empty and not more than 32 characters.</string>
+    <string name="userid_valid">Please enter Username</string>
+    <string name="userid_lenght_valid">Username should be within 6-64 characters range.</string>
+    <string name="userid_alphanumeric">Username should contain atleast one numeric character</string>
+    <string name="pwd_valid">Please enter Password</string>
+    <string name="pwd_lenght_valid">Password must be atleast 6 characters and atmost 16 characters.</string>
+    <string name="pwd_alpha">Password should contain atleast one numeric charecter</string>
+    <string name="confirmpwfd_valid">Please re-enter the Password</string>
+    <string name="pwdmismatch_valid">Passwords did not match</string>
+    <string name="bday_valid">Please enter valid date of birth.</string>
+    <string name="address_valid">Address shouldn\'t be empty and not more than 52 characters.</string>
+    <string name="address1_valid">Please enter Address 1</string>
+    <string name="address2_valid">Please enter Address 2</string>
+
+    <string name="address1_length_valid">Address one shouldn\'t be empty and not more than 52 characters.</string>
+    <string name="address2_length_valid">Address two shouldn\'t be empty and not more than 52 characters.</string>
+
+    <string name="town_valid">City shouldn\'t be empty and not more than 32 characters.</string>
+    <string name="zip_valid">ZipCode shouldn\'t be empty and not more than 10 characters.</string>
+    <string name="mobile_code_required">Please enter Mobile Country Code</string>
+    <string name="mobile_valid">Please enter Mobile phone number</string>
+    <string name="mobile_valid_number">Please enter valid Mobile number with range 8-20 characters</string>
+    <string name="email_null">Email Address shouldn\'t be empty and not more than 266 characters.</string>
+    <string name="email_valid">Please enter valid Email address</string>
+    <string name="title_valid">Please select Title</string>
+    <string name="nationality_valid">Please select Nationality</string>
+    <string name="country_valid">Please select Country</string>
+    <string name="state_valid">Please select State</string>
+    <string name="success_register">Registered Successfully</string>
+    <string name="username_valid">Username shouldn\'t be empty and not more than 64 characters.</string>
+    <string name="register_failed">Registration Failed</string>
+    <string name="issue_date_valid">Please select IssueDate</string>
+    <string name="valid_date_valid">Please select Valid Date</string>
+    <string name="select_type_valid">Please select Type of ID Proof</string>
+    <string name="issuecountry_valid">Please select Issuing Country</string>
+    <string name="birthcountry_valid">Please select Birth Country</string>
+    <string name="number_valid">Please enter Number</string>
+    <string name="phone_null">Please enter Mobile Number</string>
+    <string name="password_sent_to_mail">Your password has been sent to your email. Please check your mail</string>
+
+    <!-- Search Results Strings -->
+    <string name="searchresults">Search Results</string>
+    <string name="inbound">INBOUND</string>
+    <string name="outbound">OUTBOUND</string>
+    <string name="direct">Direct</string>
+    <string name="via">Via</string>
+    <string name="same_aircraft">Hopping (Same Aircraft)</string>
+    <string name="change_aircraft">Hopping (Change of Aircraft)</string>
+    <string name="change_carrier">Interline (Change of Carrier)</string>
+    <string name="book">Book</string>
+    <string name="date_validation">Return date should be on or after onward date</string>
+    <string name="return_date_validation">Return journey date Should be on or after booking Onward journey date</string>
+    <string name="onward_date_validation">Onward journey date cannot exceed booking Return journey date</string>
+    <string name="title">Title</string>
+    <!-- Title array items -->
+    <string-array name="title_list">
+        <item>Title</item>
+        <item>Ms</item>
+        <item>Mr</item>
+        <item>Mrs</item>
+    </string-array>
+
+    <!-- Nationality items -->
+    <string-array name="Nationality_list">
+        <item>Nationality</item>
+        <item>Indian</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Country items -->
+    <string-array name="country_list">
+        <item>Country</item>
+        <item>India</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- State items -->
+    <string-array name="state_list">
+        <item>State / Province</item>
+        <item>Andhra Pradesh</item>
+        <item>Telangana</item>
+    </string-array>
+
+    <!-- Gender Spinner -->
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="gender_male_list">
+        <item>Male</item>
+    </string-array>
+    <string-array name="gender_female_list">
+        <item>Female</item>
+    </string-array>
+
+    <string name="flight">Flight</string>
+    <string name="male_gender">Male</string>
+    <string name="female_gender">Female</string>
+    <string name="flight_no">Flight No.</string>
+    <!-- Manage Booking items -->
+    <string name="confirm_pnr_number_hint">Confirmation No (PNR)</string>
+    <string name="red_star">*</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="email_manage_booking">Email</string>
+    <string name="or">Or</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="arrival_date">Arrival Date</string>
+    <string name="track_flight">Track Flight</string>
+    <string name="find_flight">Find Flights</string>
+    <string name="departure">Departure</string>
+    <string name="arrival">Arrival</string>
+    <string name="stop">Stop</string>
+    <string name="frequency">Frequency</string>
+    <string name="origin_city">Origin city</string>
+    <string name="destination_city">Destination city</string>
+    <string name="retrieve_booking">Retrieve Booking</string>
+
+    <!-- Flight search Strings -->
+    <string name="flight_search">Flight Search</string>
+
+    <!-- Manage_booking_details -->
+    <string name="manage_booking_details_username">Dinakar</string>
+    <string name="booking_info_header">Booking Information</string>
+    <string name="booking_date">Booking Date</string>
+    <string name="pnr_number">(PNR)</string>
+    <string name="reference_number">Reference Number</string>
+    <string name="booking_status">Original Booking Status</string>
+    <string name="travel_information_header">Travel Information</string>
+    <string name="passenger_information_header">Passenger Information</string>
+    <string name="seat_information">Seat Information</string>
+    <string name="travel_date">Travel Date</string>
+    <string name="aircraft_type">Aircraft Type</string>
+    <string name="from_terminal">From/Terminal</string>
+    <string name="to_terminal">To/Terminal</string>
+    <string name="dep_time">Dep time</string>
+    <string name="arr_time">Arr Time</string>
+    <string name="fare_type">Fare Type</string>
+    <string name="airline">Airline</string>
+    <string name="passenger">Passenger(S)</string>
+    <string name="pax_type">Pax Type</string>
+    <string name="seats">SG131 SG134</string>
+    <string name="current_flight_status">Current Flight Status</string>
+    <string name="travle_docs">Travel Documents</string>
+    <string name="sector">Sector</string>
+    <string name="seat_description">Seat Description</string>
+    <string name="price">Price(INR)</string>
+
+    <!-- Spice flex strings -->
+    <string name="complimentary_meal">Complimentary meal</string>
+    <string name="free_checkin_baggage">Free Check-in Baggage</string>
+    <string name="prefered_seat_choice">Preferred seat choice</string>
+    <string name="no_change_fee">No Change Fee</string>
+    <string name="spice_flex">Spice Flex</string>
+    <string name="upgrade_to_spiceflex">Upgrade to Spice Flex, a bundled fare that entitles you to greater flexibility and added benefits including</string>
+    <string name="upgrade_to_spicemax">Upgrade to Spice Max</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="passenger_ancellaries">Passenger</string>
+    <string name="select_passenger">Passenger(s)</string>
+    <string name="meals">Meal</string>
+    <string name="seatss">Seats</string>
+    <string name="flight_optional">Flight #(Optional)</string>
+    <string name="nomeals_selection">Proceed without Selecting meals</string>
+    <string name="noseats_selection">Proceed without Selecting seats</string>
+    <string name="no_baggage_out_first_selection">Proceed without Selecting Bag Out First</string>
+    <string name="no_excess_baggage_selection">Proceed without Selecting Excess Baggage</string>
+    <string name="dots">--</string>
+    <string name="select_spice_flex_for">Select Spice Flex for</string>
+    <string name="select_seats">Seats</string>
+    <string name="spicemax_seats"> \n SpiceMax</string>
+    <string name="preferred_seats"> \n Preferred</string>
+    <string name="standard_seats"> \n Standard</string>
+    <string name="emergency_seats"> \n Emergency Row</string>
+    <string name="other_seats"> \n Others</string>
+    <string name="your_seat">Your Seat</string>
+    <string name="occupied">Occupied</string>
+    <string name="available_at_airport">Available at airport</string>
+    <string name="select_onward_seats">Please select seats for the onward journey</string>
+    <string name="select_return_seats">Please select seats for the return journey</string>
+
+    <!-- passenger info screen -->
+    <string name="add_title">Title</string>
+    <string name="dob">Date of Birth</string>
+    <string name="passeger_screen_title">Passenger Information</string>
+    <string name="add_passenger">Add Passenger</string>
+    <string name="continue_text">Continue</string>
+
+    <!-- My Flights Strings -->
+    <string name="my_flights">Flight Info</string>
+    <string name="flight_schedule">Flight Schedule</string>
+    <string name="no_flights">No Flights found</string>
+    <!-- More options -->
+    <string name="more">More</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="special_assistance">Special Assistance / Needs</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+
+    <!-- <string name="ancillaries_title">Addons</string> -->
+    <string name="excess_baggage_addon">Addons - Excess Baggage</string>
+    <string name="baggage_out_addon">Addons - Bag Out First</string>
+    <string name="seat_addon">Addons - Seats</string>
+    <string name="meal_addon">Addons - Meal</string>
+    <string name="spiceflex_addon">Addons - SpiceFlex</string>
+    <string name="baggage_out">Baggage Out First</string>
+    <string name="gender">Gender</string>
+    <string name="flying_international">Flying international</string>
+    <string name="gender_valid">Please select Gender</string>
+    <string name="type">Type of ID Proof</string>
+    <string name="issuing_country">Issuing Country</string>
+    <string name="country_of_birth">Country of Birth</string>
+    <string name="issue_date">Issue Date</string>
+    <string name="valid_upto">Valid Upto</string>
+    <string name="number">Number</string>
+    <string name="remove_profile">Remove Profile</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+
+    <!-- split strings -->
+    <string name="adult_fare">Adult Fare</string>
+    <string name="child_fare">Children Fare</string>
+    <string name="infant_fare">Infant Fare</string>
+    <string name="net_total">Net Total</string>
+    <string name="child_text">Child</string>
+    <string name="adults_text">Adult</string>
+    <string name="infant_text">Infant</string>
+
+    <!-- chnage Pwd Strings -->
+    <string name="change_pwd">Change Password</string>
+    <string name="old_pwd">Old Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="old_pwd_valid">Please enter Old Password</string>
+    <string name="new_pwd_valid">Please enter New Password</string>
+    <string name="confirm_pwd_valid">Please enter Confirm Password</string>
+    <string name="new_confirm_pwd_valid"> Password doesn\'t match the confirmation</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="valid_from_to">Please select valid "From" and "To" location</string>
+    <string name="please_select_excess">Please Select Excess Baggage</string>
+    <string name="please_select_baggageout">Please Select Bag Out First</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="submit">Submit</string>
+    <string name="hooping_change_aircraft">HoppingChangeOfAircraft</string>
+    <string name="hopingsameaircraft">HoppingSameAircraft</string>
+    <!-- <string name="direct">Direct</string> -->
+
+
+    <!-- itinenary Strings -->
+    <string name="csrpnr">CSR PNR </string>
+    <string name="airlinepnr">Airline PNR  </string>
+    <string name="passenger_itenery">Passengers </string>
+    <string name="claas_service">Class of Service  </string>
+    <string name="flighttime">Flight time  </string>
+    <string name="total_jrny_time">Total Journey  </string>
+
+    <!-- meals strings -->
+    <string name="no_meals">No Meals</string>
+    <string name="select">Select</string>
+    <string name="valid_date_validation">Valid date should be after issue date</string>
+    <string name="issue_dob_date_validation">Issue date should be on or after Birth date</string>
+    <string name="valid_dob_date_validation">Valid date should be after Birth date</string>
+    <string name="confirmation_remove">Do you want to remove profile?</string>
+    <string name="confirmation_logout">Do you want to Logout?</string>
+    <string name="valid_return_time">Please select valid return departure time</string>
+    <string name="confirmation_trip_msg">Your return date is the same as your departure date.Is such a short trip intentional?</string>
+    <string name="itinerary">Itinerary</string>
+    <string name="payment">Payment</string>
+    <string name="passengers">Passengers :</string>
+    <string name="flight_time">Flight Time :</string>
+    <string name="air_line_pnr">Airline PNR :</string>
+    <string name="cancel_flight">Cancel Flight</string>
+    <string name="cancel_journey">Cancel Journey</string>
+    <string name="change_flight">Change Flight</string>
+    <string name="add_servevices">Add Services</string>
+    <string name="change_contact_details">Change Contact Detials</string>
+    <string name="payment_info">Payment Information</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="account_number">Account Number</string>
+    <string name="amount">Amount</string>
+    <string name="status">Status</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="no_excess_baggage">Excess baggage is not available for selected flight</string>
+    <string name="no_assurance">Spice assurance is not available for selected flight</string>
+    <string name="no_baggage_out">Baggage out is not available for selected flight</string>
+    <string name="please_select_only">Please select only</string>
+    <string name="please_select">Please select</string>
+    <string name="please_select_atleast">Please select atleast</string>
+    <string name="adult_passengers">Please select only</string>
+    <string name="regular_fare">Spice Regular Fare</string>
+    <string name="flex_fare">Spice Flex Fare</string>
+    <string name="credeit_debit_card">Credit/Debit Card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="credit_shell">Credit Shell</string>
+    <string name="your_credit_amount">Your Credit Amount</string>
+    <string name="review_and_pay">Review and pay</string>
+    <string name="funds_available_use">Funds available for use</string>
+    <string name="amunt_spend">Amount to spend</string>
+    <string name="accept">I have read and accept   </string>
+    <string name="booking_terms">Booking Terms.</string>
+    <string name="pay">Pay</string>
+    <string name="chnage_flight_return">Return</string>
+    <string name="check_change_flight">Check this box in order to search for a new flight.</string>
+    <string name="click_here_meal">Select Meal</string>
+    <string name="click_here_seat">Select Seat</string>
+    <string name="excess_info"> SpiceJet allows free checked baggage of 15kgs per passenger for all domestic flights.\n\n Prepare your excess baggage here and save.</string>
+    <string name="baggage_out_info">Get your baggage first upon arrival. You have the convenience of collecting your baggage on the conveyor belt ahead of everyone else.</string>
+    <string name="none">None</string>
+    <string name="payu">PayU</string>
+    <string name="yes_bank">Yes Bank</string>
+    <string name="cancel">Cancel</string>
+    <string name="origin_city_empty">Please select Origin city</string>
+    <string name="destination_city_empty">Please select Destination city</string>
+    <string name="valid_same_src_dest">Selected From and To location are same</string>
+    <string name="error_booking_details">Error showing Booking details, please try again.</string>
+    <string name="error_cancellation_not_allowed">Cancellation not allowed for this flight</string>
+    <string name="error_cancelling_tkt">Error in cancelling ticket, please try again.</string>
+    <string name="address">Address</string>
+    <string name="preferred_mobile_num">Preferred Mobile No.</string>
+    <string name="other_phone">Other Phone</string>
+    <string name="phone_numbers">Phone number</string>
+    <string name="faredetails">Fare Details(INR)</string>
+    <string name="faredetail">Fare Details</string>
+    <string name="total_amt">Total Amount</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="balance_amt">Balance Amount</string>
+    <string name="hot_deals">Deals</string>
+    <string name="my_booking">My Bookings</string>
+    <string name="travellers">TRAVELLERS</string>
+    <string name="oneadult">1 Adult</string>
+    <string name="home_flight_status">Flight Status</string>
+    <string name="home_flight_booking">Flight Booking</string>
+    <string name="error_try_again">Error, please try again</string>
+    <!-- new UI -->
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="home">Home</string>
+    <string name="flight_booking">Flight Booking</string>
+    <string name="mobile_check_in">Check-In</string>
+    <string name="deals">Deals</string>
+    <string name="notifications">Notifications</string>
+    <string name="flight_status">Flight Status</string>
+    <string name="manage_booking">Manage Booking</string>
+    <string name="my_profile">My Profile</string>
+    <string name="spice_max">SpiceMax</string>
+    <string name="hot_meals">Hot Meals</string>
+    <string name="excess_baggage">Excess Baggage</string>
+    <string name="spice_assurance">Spice Assurance</string>
+    <string name="spice_assist">Spice Assist</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="spice_assistance">Spice Assistance</string>
+    <!-- contact -->
+    <string name="personaldetails">Personal Details</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="bday">Date of Birth</string>
+    <string name="nationality">Nationality</string>
+    <string name="contactdetails">Contact details</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="townorcity">Town or City</string>
+    <string name="ziporpostal">Zip/Postal Code</string>
+    <string name="phone_no">Mobile No.</string>
+    <string name="alternative_no">Alternative No.</string>
+    <string name="email">Email address</string>
+    <string name="im_flying">I\'m flying</string>
+    <string name="future_communication">I prefer not to receive future communication and newsletter from Spicejet</string>
+    <string name="book_now">Book Now</string>
+    <string name="comingSoonText">Coming soon</string>
+    <string name="ok">OK</string>
+    <string name="total_price_for_journey">Total price</string>
+    <string name="booknewflight">Book a new flight</string>
+    <string name="enterpnr">Enter PNR</string>
+    <string name="non_refundable">Non-Refun.</string>
+    <string name="stops">Stops</string>
+
+    <!-- <addon strings -->
+    <string name="add_ons">Add-ons</string>
+    <string name="spicemax">Spicemax:</string>
+    <string name="maximize_experience">Maxmize your experience</string>
+    <string name="moreleg">Significantly more leg room</string>
+    <string name="priority_checkin">Priority check-in</string>
+    <string name="Complimentarymealbeverage">Complimentary meal and beverage</string>
+    <string name="prioraty_baggeg">Priority baggage delivery</string>
+    <string name="chooseseat">Choose your seat</string>
+    <string name="hotmeals">Hot meals on board</string>
+    <string name="starting">starting </string>
+    <string name="rs500">Rs 500*</string>
+    <string name="select_one_passenger">Please selecte atleast one passenger to continue</string>
+    <string name="spice_max_meals_availability">This meal will be served as per what is available on the aircraft</string>
+    <string name="confirm">Confirm</string>
+    <string name="mealss">Meals</string>
+    <string name="travel_insurance">TRAVEL INSURANCE</string>
+    <string name="travel_insurance_text1">Secure your trip with insurance</string>
+    <string name="travel_insurance_text2">Domestic travel insurance(129.00)</string>
+    <string name="login_details">Login Details</string>
+    <string name="no_seats">No spicemax seats avaiable</string>
+    <string name="adults">Adults</string>
+    <string name="children">Children</string>
+    <string name="infants">Infants</string>
+    <string name="register_text">Register</string>
+    <string name="city_text">City</string>
+    <string name="country_text">Country</string>
+    <string name="contact_info_capital_text">CONTACT INFORMATION</string>
+    <string name="email_text">E-mail</string>
+    <string name="mobile_text">Mobile</string>
+    <string name="contact_info_sub_text">Your eTicket will be sent to the E-mail address you provided above. Same information will be needed for cancelling or modifying this booking </string>
+    <string name="thank_you">Thank you</string>
+    <string name="itinerary_confirmation">Your Booking is confirmed</string>
+    <string name="date_of_birth">DOB</string>
+    <string name="multi_adults">Adult(s)</string>
+    <string name="multi_infants">Infant(s)</string>
+    <string name="add_passenger_details">Add Passenger Details</string>
+    <string name="_91">+91</string>
+    <string name="marked_fields">Marked fields are mandatory</string>
+    <string name="please_wait_">Please Wait.....</string>
+    <string name="pick_travellers">Pick Travellers</string>
+    <string name="searching_flights_for">Searching flights for</string>
+    <string name="assurance_text">SpiceAssurance takes care of your flight delays, cancellations or baggage loss</string>
+    <string name="confirmation_no">Confirmation No (PNR)</string>
+    <string name="please_check_flight">Please check this box in order to cancel your flight</string>
+    <!-- Manage booking -->
+
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="payment_status">Status</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    <string name="change_contact">Change Contact Details</string>
+    <string name="cute_fee">Fare + CuteFee</string>
+    <string name="service_tax">Service Tax\@4.95\%</string>
+    <string name="passenger_service">Passenger Service Fee</string>
+    <string name="user_develop_fee">User Development Fee-Arraival</string>
+    <string name="convenience_fee">Convenience Fee</string>
+    <string name="change_cancel_fee">Change/cancel Fee</string>
+    <string name="fare_info">Fare Details</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="amount_due">Amount Due</string>
+    <string name="balance_due">Balance Due</string>
+    <string name="change_flight_summary">Change Flight Summary</string>
+    <string name="cancel_summary">Cancel Summary</string>
+    <string name="confirmation_summary">Confirmation Summary</string>
+    <string name="cancel_thank_you">Thank you for booking with us!</string>
+    <string name="cancel_successfull_text">Your cancellation is successful, for any further queries please visit- www.spicejet.com or Contact our customer care</string>
+    <string name="try_transaction_again">Your transaction is failed. Try again</string>
+    <string name="retry">Retry</string>
+    <string name="travel_docs_required">Travel Documents are required for the passengers. Please edit the passengers and provide required information.</string>
+    <!-- GCM Strings -->
+
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="fare_rules">Fare Rules</string>
+    <string name="accept_tnc_text">I have read and understood the <u>Change and Cancellation</u> policy and I agree to all the <u>Terms and Conditions</u>.</string>
+    <string name="accept_text">Accept</string>
+    <string name="gps_not_found_title">Location Not Found</string>
+    <string name="gps_not_found_message">Location settings are disabled. Please enable them in Settings</string>
+    <string name="enable">Enable</string>
+    <string name="update_available">Update Available</string>
+    <string name="update_available_msg">There is a latest version available, would you like to download?</string>
+    <!-- For Left Navigationdrawer Items - Total 13 items statically -->
+    <string-array name="left_navigation_list_items">
+        <!-- 0 -->
+        <item>Home</item>
+        <!-- 1 -->
+        <item>Flight Booking</item>
+        <item>Check-In</item>
+        <!-- 2 -->
+        <item>Deals</item>
+        <item>Notifications</item>
+        <!-- 3 -->
+        <item>Flight Status</item>
+        <!-- 4 -->
+        <item>Manage Booking</item>
+        <!-- 5 -->
+        <item>My Profile</item>
+        <!-- 6 -->
+        <item>SpiceMax</item>
+        <!-- 7 -->
+        <item>Hot Meals</item>
+        <!-- 8 -->
+        <item>Excess Baggage</item>
+        <!-- 9 -->
+        <item>Spice Assurance</item>
+        <!-- 10 -->
+        <item>About Us</item>
+        <!-- 11 -->
+        <item>Contact Us</item>
+        <!-- 12 -->
+        <item>Terms &amp; Conditions</item>
+    </string-array>
+    <string name="start_typing_a_name_code">Start typing a name / code</string>
+
+    <string name="scheduled_time">Scheduled Time</string>
+    <string name="estimated_time">Estimated Time</string>
+    <string name="actual_time">Actual Time</string>
+    <string name="column">:</string>
+    <string name="departs">Departs</string>
+
+    <string name="check_in_successful_message">Please print the boarding pass which you will receive shortly on your Email ID and report at airport 45 minutes before departure.</string>
+    <string name="check_in_email_mobile">Please verify your email ID &amp; mobile number to receive the Boarding Pass and Confirmation SMS.</string>
+    <string name="error_select_to_change_flight">Please select a journey to continue.</string>
+    <string name="bill_desk">Bill Desk</string>
+    <string name="select_payment_gateway">Please select a payment gateway</string>
+    <string name="discount_250_applied">Discount of Rs. 250 is applied for this booking</string>
+    <string name="error_select_payment_gateway">Please select a payment gateway to continue</string>
+    <string name="checked_passenger_information">CheckedIn Passenger Information</string>
+    <string name="journey_information">Journey Information</string>
+    <string name="you_have_successfully_checked_in">You have successfully checked-in</string>
+    <string name="select_to_proceed">Please select atleast one passenger to proceed</string>
+    <string name="assign_seats_for_checkin">Please select seats for selected Passengers</string>
+    <string name="manage_not_allowed_for_checked">Manage booking is not allowed for checked in passengers.</string>
+    <string name="accept_check_in_tnc">Please accept <u>Terms and Conditions</u> for mobile Check-In</string>
+    <string name="passes_sent_via_email">Boarding Pass(es) have been sent via email</string>
+    <string name="already_spicemax_user">You already bought a Spicemax seat for this trip!</string>
+    <string name="begin_check_in">Begin Check-In</string>
+    <string name="total_pax">Total Pax</string>
+    <string name="save">Save</string>
+    <string name="boarding_passes">Boarding Passes</string>
+    <string name="name">Name</string>
+    <string name="confirmation_remove_passenger">Are you sure, you want to remove passenger?</string>
+
+
+    <string name="ph_no_10_digits">Phone Number Should be 10 Digits</string>
+    <string name="passes_saved_folder">Pass(es) saved successfully in SpiceJet folder.</string>
+    <string name="proceed_to_cancel_the_booking_process">Proceed to cancel the booking process?</string>
+    <string name="cancel_current_booking_">Cancel Current Booking!</string>
+    <string name="cancel_booking_msg">Almost Done! Would you still want to cancel this session?</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

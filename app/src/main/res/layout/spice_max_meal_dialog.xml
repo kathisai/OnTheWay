@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:background="@color/white" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:text="@string/spice_max_meals_availability"
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_15" />
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/btn_done"
+        style="@style/button_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="@string/done" />
+
+</LinearLayout>

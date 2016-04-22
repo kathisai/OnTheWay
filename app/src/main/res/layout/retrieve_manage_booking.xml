@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_tnc"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pnrNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/pnrHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/confirmation_no"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pnrHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/Edittext_confirmtaion_pnr_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pnrHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_header_color"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <RadioButton
+                    android:id="@+id/retrieveBookingOption1RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:button="@drawable/custom_radio_selector"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/option1"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/emailHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/email_text"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/emailHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/Edittext_option1_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="0.4"
+                    android:background="@color/app_theme_red"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="or"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/sp_20"
+                    spicejet:textStyle="regular" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="0.4"
+                    android:background="@color/app_theme_red"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/search_header_color"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <RadioButton
+                    android:id="@+id/retrieveBookingOption2RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:button="@drawable/custom_radio_selector"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/option2"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/firstNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/firstNameHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/first_name"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/firstNameHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/Edittext_option2_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstNameHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lastNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/lastNameHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/last_name"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/lastNameHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/Edittext_option2_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastNameHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/originCityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/originCityHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:onClick="onClick"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/origin_city"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/originCityHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/Edittext_option2_origin_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/originCityHintText"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/destinationCityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/destinationCityHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/destination_city"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/destinationCityHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/Edittext_option2_destination_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinationCityHintText"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:drawableLeft="@drawable/ic_register_mandatory"
+                android:drawablePadding="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="@string/requiredfields"
+                android:textColor="@color/reg_reqtext_color"
+                android:textSize="@dimen/sp_15"
+                spicejet:textStyle="light" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button_retriveBooking"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" 
+        android:id="@+id/ll_tnc"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cb_tnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dp_5"
+            android:button="@drawable/checkbox_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_checkbox" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept_check_in_tnc"
+            android:textColor="@color/navigation_text_color"
+            android:id="@+id/tv_tnc" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/Button_retriveBooking"
+        style="@style/button_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_15"
+        android:padding="@dimen/dp_5"
+        android:text="@string/retrieve_booking"
+        android:textColor="@color/white" >
+    </com.vl.spicejet.components.CustomButton>
+
+</RelativeLayout>

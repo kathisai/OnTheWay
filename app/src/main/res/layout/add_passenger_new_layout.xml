@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_header" >
+    
+    <include
+        android:id="@+id/top_indicator_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        layout="@layout/top_booking_inidicator_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer_layout"
+        android:layout_below="@+id/top_indicator_bar"
+        android:background="@color/light_header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/add_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_header_color"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5"
+                android:visibility="gone" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/add_pass_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableStart="@drawable/cross_image"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/remove_profile"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/sp_12"
+                    spicejet:textStyle="regular" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/firstNameLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="visible" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/firstNameHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/first_name"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/firstNameHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/firstNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstNameHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/middleNameLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/middle_name"
+                    spicejet:textStyle="light" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/middleNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapWords"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lastNameLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/lastNameHintText"
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:text="@string/last_name"
+                    spicejet:textStyle="light" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/lastNameHintText"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:src="@drawable/ic_register_mandatory" />
+
+                <com.vl.spicejet.components.CustomEditText
+                    android:id="@+id/lastNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastNameHintText"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapWords"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_radio_button_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/male_gender"
+                    android:textSize="@dimen/sp_18" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFeMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_radio_button_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/female_gender"
+                    android:textSize="@dimen/sp_18" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/dobLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/dobHintText"
+                        style="@style/new_contact_info_hinttext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/date_of_birth"
+                        spicejet:textStyle="light" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/dobNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dobHintText"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="@dimen/sp_18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/dobHintText"
+                        android:paddingLeft="@dimen/dp_3"
+                        android:src="@drawable/ic_register_mandatory" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/calendar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nationalityLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/contacts_info_textfield"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/nationalityInnerLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/nationalityHintText"
+                        style="@style/new_contact_info_hinttext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/nationality"
+                        spicejet:textStyle="light" />
+
+                    <com.vl.spicejet.components.CustomEditText
+                        android:id="@+id/nationalityNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nationalityHintText"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName|textCapWords"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="@dimen/sp_18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/nationalityHintText"
+                        android:paddingLeft="@dimen/dp_3"
+                        android:src="@drawable/ic_register_mandatory" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flying_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/contacts_info_textfield"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/tv_fly_international"
+                        style="@style/new_contact_info_hinttext_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/flying_international"
+                        spicejet:textStyle="regular" />
+
+                    <CheckBox
+                        android:id="@+id/cb_flying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/checkbox_selector"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_5" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_flying_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/typeLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/typeRL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:clickable="true"
+                            android:orientation="vertical" >
+
+                            <com.vl.spicejet.components.CustomTextView
+                                android:id="@+id/typeHintText"
+                                style="@style/new_contact_info_hinttext_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:text="@string/type"
+                                spicejet:textStyle="light" />
+
+                            <Spinner
+                                android:id="@+id/typeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/typeHintText"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="left"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="@dimen/sp_18" />
+
+                            <ImageView
+                                 android:id="@+id/typeMandatotyIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/typeHintText"
+                                android:paddingLeft="@dimen/dp_3"
+                                android:src="@drawable/ic_register_mandatory" />
+                        </RelativeLayout>
+
+                        <ImageView
+                           
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/countryOfBirthLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/countryOfBirthRL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:clickable="true"
+                            android:orientation="vertical" >
+
+                            <com.vl.spicejet.components.CustomTextView
+                                android:id="@+id/countryOfBirthHintText"
+                                style="@style/new_contact_info_hinttext_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:text="@string/issuing_country"
+                                spicejet:textStyle="light" />
+
+                            <com.vl.spicejet.components.CustomEditText
+                                android:id="@+id/countryOfBirthEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/countryOfBirthHintText"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="left"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="@dimen/sp_18" />
+
+                            <ImageView
+                                 android:id="@+id/conuntryMandatotyIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/countryOfBirthHintText"
+                                android:paddingLeft="@dimen/dp_3"
+                                android:src="@drawable/ic_register_mandatory" />
+                        </RelativeLayout>
+
+                        <ImageView
+                           
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/issuingCountryLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/issuingCountryRL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:clickable="true"
+                            android:orientation="vertical" >
+
+                            <com.vl.spicejet.components.CustomTextView
+                                android:id="@+id/issuingCountryHintText"
+                                style="@style/new_contact_info_hinttext_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:text="@string/country_of_birth"
+                                spicejet:textStyle="light" />
+
+                            <com.vl.spicejet.components.CustomEditText
+                                android:id="@+id/issuingCountryEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/issuingCountryHintText"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="left"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="@dimen/sp_18" />
+
+                            <ImageView
+                                 android:id="@+id/issuingCountryMandatotyIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/issuingCountryHintText"
+                                android:paddingLeft="@dimen/dp_3"
+                                android:src="@drawable/ic_register_mandatory" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/issueDateLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/issueDateRL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:clickable="true"
+                            android:orientation="vertical" >
+
+                            <com.vl.spicejet.components.CustomTextView
+                                android:id="@+id/issueDateHintText"
+                                style="@style/new_contact_info_hinttext_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:text="@string/issue_date"
+                                spicejet:textStyle="light" />
+
+                            <com.vl.spicejet.components.CustomEditText
+                                android:id="@+id/issueDateEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/issueDateHintText"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="left"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="@dimen/sp_18" />
+
+                            <ImageView
+                                 android:id="@+id/issuinDateMandatotyIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/issueDateHintText"
+                                android:paddingLeft="@dimen/dp_3"
+                                android:src="@drawable/ic_register_mandatory" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_register_calendar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/validDateLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:id="@+id/validDateRL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:clickable="true"
+                            android:orientation="vertical" >
+
+                            <com.vl.spicejet.components.CustomTextView
+                                android:id="@+id/validDateHintText"
+                                style="@style/new_contact_info_hinttext_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:text="@string/valid_upto"
+                                spicejet:textStyle="light" />
+
+                            <com.vl.spicejet.components.CustomEditText
+                                android:id="@+id/validDateEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/validDateHintText"
+                                android:background="@null"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="left"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="@dimen/sp_18" />
+
+                            <ImageView
+                                android:id="@+id/validDateMandatotyIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/validDateHintText"
+                                android:paddingLeft="@dimen/dp_3"
+                                android:src="@drawable/ic_register_mandatory" />
+                        </RelativeLayout>
+
+                        <ImageView
+                             
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_register_calendar" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/numberLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/contacts_info_textfield"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp" >
+
+                        <com.vl.spicejet.components.CustomTextView
+                            android:id="@+id/numberHintText"
+                            style="@style/new_contact_info_hinttext_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/number"
+                            spicejet:textStyle="light" />
+
+                        <ImageView
+                             android:id="@+id/numberMandatotyIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/numberHintText"
+                            android:paddingLeft="@dimen/dp_3"
+                            android:src="@drawable/ic_register_mandatory" />
+
+                        <com.vl.spicejet.components.CustomEditText
+                            android:id="@+id/numberEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/numberHintText"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName|textCapWords"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textSize="@dimen/sp_18" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <com.vl.spicejet.components.CustomTextView
+                    style="@style/new_contact_info_hinttext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_11"
+                    android:text="* marked fields are required"
+                    spicejet:textStyle="light" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <com.vl.spicejet.components.CustomButton
+                    android:id="@+id/add_pass_btn"
+                    style="@style/button_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:text="@string/add"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_split_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

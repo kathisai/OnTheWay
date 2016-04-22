@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cancel_confirm_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/changefee"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="conviencefee"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text=":"
+            android:textColor="@color/reg_header_color" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/change_price"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:text="200"
+            android:textColor="@color/reg_field_color"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/cancelamt_tv"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cancel Ammount"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text=":"
+            android:textColor="@color/reg_header_color" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_cancelamt"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:text="200"
+            android:textColor="@color/reg_field_color"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/balanceamt_tv"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Balance Ammount"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text=":"
+            android:textColor="@color/reg_header_color" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_balanceamt"
+            android:layout_width="@dimen/padding_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:text="200"
+            android:textColor="@color/reg_field_color"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/buttons_with_rounded_red_bg"
+            android:text="@string/yes"
+            android:textColor="@color/white" />
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons_with_rounded_red_bg"
+            android:text="@string/no"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

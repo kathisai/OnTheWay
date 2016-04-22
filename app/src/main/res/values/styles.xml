@@ -1,0 +1,228 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="MyTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="title">@string/empty_string</item>
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="displayOptions">showHome|useLogo</item>
+        <item name="colorPrimary">@color/app_theme_red</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorPrimaryDark">@color/app_theme_red</item>
+        <item name="android:textColorPrimary">@color/app_theme_red</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item>
+    </style>
+
+    <style name="MyCustomDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="navigationIcon">@drawable/home_menu</item>
+    </style>
+
+    <!-- Nav drawer style to set width specified by Material Design specification -->
+    <style name="NavDrawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/nav_drawer_margin_offset</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.DarkActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBar.Solid.Apptheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/app_theme_red</item>
+    </style>
+
+    <!-- <style name="dialog_light" parent="@android:style/Theme.Dialog"> -->
+    <!-- <item name="@android:windowBackground">@android:color/white</item> -->
+    <!-- <item name="@android:textColor">@android:color/black</item> -->
+    <!-- </style> -->
+
+    <style name="login_buttons_theme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="find_flight_radios_theme">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_10</item>
+    </style>
+
+    <style name="manage_booking_details_input">
+        <item name="android:layout_width">@dimen/dp_150</item>
+        <item name="android:textColor">@color/booking_details_input</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="manage_booking_details_header">
+        <item name="android:padding">20dp</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:textColor">@color/app_theme_red</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:background">@color/manage_booking_details_header</item>
+    </style>
+
+    <style name="manage_booking_details_input_value">
+        <item name="android:textColor">@color/manage_booking_header</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+    </style>
+
+    <style name="manage_booking_details_sub_header">
+        <item name="android:textColor">@color/app_theme_red</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="rounded_buttons_theme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:background">@drawable/buttons_with_rounded_red_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_5</item>
+    </style>
+
+    <style name="home_action_buttons">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:drawablePadding">@dimen/dp_5</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="search_results_header_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+    </style>
+
+    <style name="search_results_passengers_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="search_results_flight_number">
+        <item name="android:textColor">@color/navigation_text_color</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="search_results_flight_fare">
+        <item name="android:textColor">@color/app_theme_red</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="search_results_flight_duration">
+        <item name="android:textColor">@color/flight_duration_color</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="MY.DIALOG" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="addons_headers">
+        <item name="android:textColor">@color/navigation_text_color</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="addons_segments">
+        <item name="android:textColor">@color/navigation_text_color</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:background">@color/cream_grey</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="itinerary_headers">
+        <item name="android:textColor">@color/navigation_text_color</item>
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="button_large">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/btn_large</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:background">@drawable/btn_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="new_contact_info_hinttext_style">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="passenger_popup_text_style">
+        <item name="android:textColor">@color/navigation_text_color</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawableLeft">@drawable/star</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:padding">@dimen/dp_10</item>
+    </style>
+
+    <style name="number_picker_button_style">
+        <item name="android:textColor">@color/app_theme_red</item>
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/dp_15</item>
+    </style>
+
+</resources>

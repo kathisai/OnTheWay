@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme_red"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_search_from"
+            style="@style/search_results_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            style="@style/search_results_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/arrow_white" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_search_to"
+            style="@style/search_results_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme_red"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_search_date"
+            style="@style/search_results_passengers_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/tv_search_no_of_passengers"
+            style="@style/search_results_passengers_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dates_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+</LinearLayout>

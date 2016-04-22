@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/sv_register"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer_layout"
+        android:layout_alignParentTop="true" >
+        
+              
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+           
+            
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_register_mandatory"
+                android:drawablePadding="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="@string/requiredfields"
+                android:textColor="@color/reg_reqtext_color"
+                android:textSize="@dimen/sp_12"
+                spicejet:textStyle="light" />
+
+            <LinearLayout
+                android:id="@+id/login_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/light_header"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/login_details"
+                    android:textColor="@color/app_theme_red"
+                    android:textSize="@dimen/sp_14"
+                    spicejet:textStyle="regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/tr_userid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/include_contact_edittext"
+                        android:visibility="visible" />
+                                        
+                     <include layout="@layout/seperator" />
+
+                    <include
+                        android:id="@+id/tr_pswd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/include_contact_edittext" />
+
+                    <include layout="@layout/seperator" />
+
+                    <include
+                        android:id="@+id/tr_re_enter_psed"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/include_contact_edittext" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/light_header"
+                android:drawablePadding="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="@string/personaldetails"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_14"
+                spicejet:textStyle="regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                
+                android:orientation="vertical" >
+
+                <!-- <include
+                    android:id="@+id/tr_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_spinner" /> -->
+ 
+     <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@color/light_header"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                                    android:layout_marginRight="@dimen/dp_2"
+                                    android:layout_marginLeft="@dimen/dp_1"
+                    android:background="@drawable/gender_radio_button_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/male_gender"
+                    android:textSize="@dimen/sp_18" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFeMaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp_1"
+                    android:background="@drawable/gender_radio_button_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/female_gender"
+                    android:textSize="@dimen/sp_18" />
+            </RadioGroup>
+
+                         
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_spinner"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/tr_first_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_last_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_birthdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_textview" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_nationality"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_textview" />
+            </LinearLayout>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/light_header"
+                android:drawablePadding="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="@string/contactdetails"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_14"
+                spicejet:textStyle="regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <include
+                    android:id="@+id/tr_address1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_address2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_country"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_textview" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_textview" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_town"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_zipcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_alternative_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+
+                <include layout="@layout/seperator" />
+
+                <include
+                    android:id="@+id/tr_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/include_contact_edittext" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_im_flying"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_5"
+                android:button="@drawable/checkbox_selector"
+                android:paddingLeft="@dimen/padding_checkbox"
+                android:text="@string/im_flying"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/cb_future_comunication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_5"
+                android:button="@drawable/checkbox_selector"
+                android:paddingLeft="@dimen/padding_checkbox"
+                android:text="@string/future_communication"
+                android:visibility="gone" />
+
+            <com.vl.spicejet.components.CustomButton
+                android:id="@+id/submit"
+                style="@style/button_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginTop="@dimen/dp_5"
+                android:onClick="onClick"
+                android:text="@string/register_text"
+                spicejet:textStyle="semi-bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_10"
+        layout="@layout/bottom_split_layout" />
+
+</RelativeLayout>

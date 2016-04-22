@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_3"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_5"
+        android:text="Dinakar"
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_13"
+        spicejet:textStyle="regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_ll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/tv_src_flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_3"
+                android:text="DELHI"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <LinearLayout
+                android:id="@+id/ll_flight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/first_boundcircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_srchresults_red" />
+
+                <ImageView
+                    android:id="@+id/bound_flight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_srchresults_redfight" />
+
+                <View
+                    android:id="@+id/bound_view"
+                    android:layout_width="@dimen/spiner_height"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/app_theme_red" />
+
+                <ImageView
+                    android:id="@+id/last_boundcircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@drawable/ic_srchresults_red" />
+            </LinearLayout>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/tv_dest_flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HYDERABAD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+        <include 
+            layout="@layout/seperator" />
+   </LinearLayout>
+
+    <RelativeLayout
+         android:id="@+id/image_ll"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/app_theme_red"
+	    android:padding="@dimen/dp_10"
+	    android:layout_alignParentRight="true" >
+          <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:src="@drawable/searchresults_crossmark" />
+    </RelativeLayout>
+    
+   
+
+</RelativeLayout>

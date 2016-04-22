@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10" >
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_more_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/ic_myflights_flightschedule"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="@string/flight_schedule"
+        android:textColor="@color/searchresults_text"
+        android:textSize="@dimen/sp_13"
+        spicejet:textStyle="regular" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_myflights_arrow" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/elv_split"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/payment_details_ll"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:childDivider="@color/white"
+        android:groupIndicator="@null"
+        android:isScrollContainer="false"
+        android:scrollingCache="false" >
+    </ExpandableListView>
+
+    <TableLayout
+        android:id="@+id/payment_details_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TableRow>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_5"
+                android:text="@string/total_cost"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:id="@+id/tv_total_cost_value"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_5"
+                android:text="@string/amount_paid"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/dp_5"
+				android:id="@+id/tv_amount_paid_value"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_5"
+                android:text="@string/balance_due"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/dp_5"
+                android:id="@+id/tv_balance_due_value"
+                android:textColor="@color/navigation_text_color"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/btn_continue"
+            style="@style/button_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/continue_text" />
+    </TableLayout>
+
+</RelativeLayout>

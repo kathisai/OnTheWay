@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/addons_segments"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_previus_addons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/leftarrowinactive" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_addons_segment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:drawableLeft="@drawable/twowaysarrow"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center" 
+        android:textColor="@color/app_theme_red"
+        android:textSize="@dimen/sp_15"/>
+
+    <ImageView
+        android:id="@+id/iv_next_addons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/rightarrowactive" />
+
+</LinearLayout>

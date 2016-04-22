@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/itineraryHeader"
+        layout="@layout/itinerary_header" />
+
+    <include
+        android:id="@+id/itineraryTwoWayHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itineraryHeader"
+        layout="@layout/itinerary_header"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/processedButon"
+        android:layout_below="@+id/itineraryTwoWayHeader"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/fareInfoTV"
+                style="@style/itinerary_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/disablecolor"
+                android:enabled="true"
+                android:text="@string/fare_info"
+                android:textColor="@color/app_theme_red" />
+
+            <ListView
+                android:id="@+id/fareInfoLV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <!--
+                <LinearLayout
+                    android:id="@+id/cureFeeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cute_fee"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/cuteFeeTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinakar"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/serviceTaxLL"
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/service_tax"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/serviceTaxTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="$10284.00"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/passengerServiceFeeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passenger_service"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/passengerServiceFeeTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="adssd"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/userDevelopLL"
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_develop_fee"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/userDevelopTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/convenienceFeeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:text="@string/convenience_fee"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/convenienceFeeTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/changeCancelFeeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10" >
+
+                    <com.vl.spicejet.components.CustomTextView
+                        style="@style/manage_booking_details_input"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_cancel_fee"
+                        spicejet:textStyle="regular" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":" />
+
+                    <com.vl.spicejet.components.CustomTextView
+                        android:id="@+id/changeCancelFeeTv"
+                        style="@style/manage_booking_details_input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"
+                        spicejet:textStyle="regular" />
+                </LinearLayout>
+            -->
+
+            <com.vl.spicejet.components.CustomTextView
+                style="@style/itinerary_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/disablecolor"
+                android:enabled="true"
+                android:text="@string/payment_details"
+                android:textColor="@color/app_theme_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    style="@style/manage_booking_details_input"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_paid"
+                    spicejet:textStyle="regular" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=":" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/amountPaidTv"
+                    style="@style/manage_booking_details_input_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="234"
+                    spicejet:textStyle="regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    style="@style/manage_booking_details_input"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_due"
+                    spicejet:textStyle="regular" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=":" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/amountDueTv"
+                    style="@style/manage_booking_details_input_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    spicejet:textStyle="regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/processedButon"
+        style="@style/button_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_15"
+        android:padding="@dimen/dp_5"
+        android:text="@string/proceed_to_payment"
+        android:textColor="@color/white" >
+    </com.vl.spicejet.components.CustomButton>
+
+</RelativeLayout>

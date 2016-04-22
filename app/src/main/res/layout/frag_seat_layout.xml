@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" 
+        android:layout_margin="@dimen/dp_5">
+
+        <!--
+    <LinearLayout
+        android:id="@+id/ll_done_seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/buttons_with_rounded_red_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_40"
+            android:paddingRight="@dimen/dp_40"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_15"
+            app:textStyle="regular" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+        -->
+
+
+        <!--
+    <com.vl.spicejet.components.FlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </com.vl.spicejet.components.FlowLayout>
+        -->
+
+        <TextView
+            android:id="@+id/tv_no_spicemax_seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_done_seat"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/no_seats"
+            android:visibility="gone" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_done"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/seat_layout_header_ll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.42"
+                android:visibility="invisible"
+                layout="@layout/list_header_seat_layout" />
+
+            <ListView
+                android:id="@+id/lv_passengersList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/btn_done"
+                android:layout_margin="@dimen/dp_3"
+                android:visibility="invisible"
+                android:layout_weight="0.26" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/lv_seatSelection"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/btn_done"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="0.6" >
+            </ListView>
+        </LinearLayout>
+
+        <!--
+    <ListView
+        android:id="@+id/lv_seatSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_above="@+id/ll_done_seat" >
+
+    </ListView>
+        -->
+
+
+        <!--
+         <RelativeLayout
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/app_theme_red"
+        android:padding="@dimen/dp_10" >
+        -->
+
+        
+        <!-- </RelativeLayout> -->
+
+        <com.vl.spicejet.components.CustomButton
+            android:id="@+id/btn_done"
+            style="@style/button_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@color/app_theme_red"
+            android:text="@string/done"
+            android:textSize="@dimen/sp_15"
+            spicejet:textStyle="semi-bold" />
+    </RelativeLayout>
+    
+    <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:src="@drawable/ic_cross" />
+
+</RelativeLayout>

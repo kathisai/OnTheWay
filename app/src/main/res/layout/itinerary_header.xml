@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pnrLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:weightSum="4" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/pnrTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="PNR-PRSDFG"
+            android:textColor="@color/app_theme_red"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status:" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/statusValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="confirmed"
+            android:textColor="@color/black"
+            spicejet:textStyle="regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pnrLL"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:weightSum="4" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Wed 03,Jun,2015"
+            android:textColor="@color/black"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/flightNoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status:" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/flightRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="From"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="To"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/flightNameRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/fromFlightName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="DEL"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/toFlightName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="BOM"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/fromFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Terminal:"
+            android:textColor="@color/reg_header_color"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/fromTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@+id/fromFlight"
+            android:text="1B"
+            android:textColor="@color/black" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/toTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/toFlight"
+            android:text="Terminal:"
+            android:textColor="@color/reg_header_color" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/toFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="1D"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/fromFlightTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="07:45 AM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/toFlightTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="09:45 AM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+</LinearLayout>

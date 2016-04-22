@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/add_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_header_color"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/add_pass_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableStart="@drawable/ic_passenger_add"
+            android:padding="@dimen/dp_10"
+            android:text="@string/add_passenger"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_13"
+            spicejet:textStyle="regular"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/passenger_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_header"
+        android:layout_centerInParent="true" >
+    </ListView>
+
+</RelativeLayout>

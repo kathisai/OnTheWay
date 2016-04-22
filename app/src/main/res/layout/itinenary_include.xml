@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.vl.spicejet"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_register_textheader"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/srcflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_3"
+                android:text="DELHI"
+                android:textColor="@color/reg_header_color"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_srchresults_red" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_srchresults_redfight" />
+
+            <View
+                android:id="@+id/bound_view"
+                android:layout_width="@dimen/spiner_height"
+                android:layout_height="@dimen/dp_1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/app_theme_red" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_5"
+                android:src="@drawable/ic_srchresults_red" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/destflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HYDERABAD"
+                android:textColor="@color/reg_header_color"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/flight_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_20"
+            spicejet:textStyle="regular" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_payment_updated_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_register_textheader"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/dp_15"
+        android:textColor="@color/reg_header_color"
+        android:textSize="@dimen/sp_17"
+        spicejet:textStyle="regular" />
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/departureTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme_red"
+        android:drawableLeft="@drawable/ic_itinerary_flight"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_15"
+        android:text="@string/departure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_17"
+        spicejet:textStyle="regular" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/deparure_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_20" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/deparure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/departure_airportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="Delhi International Airport"
+        android:textColor="@color/reg_header_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="Confirmation Summary"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Booking date"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_bookingdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:textColor="@color/reg_field_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="PNR      "
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_pnrNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Reference Number "
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_ref_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Booking Status"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_booking_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="Travel Information"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_16" />
+        <LinearLayout 
+             android:id="@+id/travelInfoLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+         
+         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="Payment Details"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Payment Type"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_payment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:textColor="@color/reg_field_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Account Number"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_ac_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Amount Paid"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Balence Due"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_balance_due"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:textColor="@color/reg_field_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:orientation="horizontal" >
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Status"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text=":"
+                    android:textColor="@color/reg_header_color" />
+
+                <com.vl.spicejet.components.CustomTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

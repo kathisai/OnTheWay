@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/top_indicator_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        layout="@layout/top_booking_inidicator_bar" />
+
+    <RelativeLayout
+        android:id="@+id/add_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_indicator_bar"
+        android:background="@color/search_header_color"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/add_pass_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableStart="@drawable/ic_passenger_add"
+            android:padding="@dimen/dp_10"
+            android:text="@string/add_passenger"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_18"
+            spicejet:textStyle="regular" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/passenger_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass_continue"
+        android:layout_below="@+id/add_header"
+        android:layout_centerInParent="true" >
+    </ListView>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/pass_continue"
+        style="@style/button_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/continue_text"
+         spicejet:textStyle="semi-bold" />
+
+    <include
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_split_layout"
+        android:visibility="visible" />
+
+</RelativeLayout>

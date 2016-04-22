@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableRow1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/greyfield"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_15" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/fieldname_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="@string/personaldetails"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            spicejet:textStyle="regular" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:background="@drawable/ic_register_mandatory" />
+    </LinearLayout>
+
+    <com.vl.spicejet.components.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02" />
+
+    <com.vl.spicejet.components.CustomEditText
+        android:id="@+id/fieldvalue_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_weight="0.58"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_horizontal"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingBottom="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

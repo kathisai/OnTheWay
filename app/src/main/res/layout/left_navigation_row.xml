@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/img_left_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/abc_action_bar_home_description"
+        android:src="@drawable/sidemenu_flightbooking" />
+
+   <com.vl.spicejet.components.CustomTextView
+        android:id="@+id/tv_left_nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_toRightOf="@+id/img_left_nav"
+        android:textColor="@color/navigation_text_color"
+        android:textSize="@dimen/sp_20"
+        spicejet:textStyle="regular" />
+
+</RelativeLayout>

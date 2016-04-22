@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/devider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/searchresults_notification" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fate_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="2.5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/dp_5" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/total_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="@string/total_price_for_journey"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_16"
+                spicejet:textStyle="regular" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/total_fare_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/total_name_tv"
+                android:layout_marginRight="@dimen/dp_5"
+                android:drawableLeft="@drawable/anc_rupee"
+                android:drawablePadding="@dimen/dp_2"
+                android:text="0.0"
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_20"
+                spicejet:textStyle="regular" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fare_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/app_theme_red"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/searchresults_whitearrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <ListView
+        android:id="@+id/elv_excessBaggage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_next_excess_baggage"
+        android:background="@color/white"
+        android:groupIndicator="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_next_excess_baggage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/no_baggage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_5"
+            android:button="@drawable/checkbox_selector"
+            android:paddingLeft="@dimen/padding_checkbox"
+            android:text="@string/no_excess_baggage_selection"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_next_passen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomButton
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/buttons_with_rounded_red_bg"
+                android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                android:visibility="visible" />
+
+            <com.vl.spicejet.components.CustomButton
+                android:id="@+id/btn_next_passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/buttons_with_rounded_red_bg"
+                android:paddingLeft="@dimen/dp_40"
+                android:paddingRight="@dimen/dp_40"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                app:textStyle="regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

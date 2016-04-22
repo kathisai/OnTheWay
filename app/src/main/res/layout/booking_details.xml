@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spicejet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manage_booking_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/TextView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="@string/manage_booking_details_username"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_14"
+            spicejet:textStyle="regular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_username"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_fromPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <include
+                android:id="@+id/Imagview_locations"
+                layout="@layout/flight_indicator_layout" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_toPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/TextView_flightNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_24"
+            spicejet:textStyle="light" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/app_theme_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10" >
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/TextView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_theme_red"
+            android:textSize="@dimen/sp_14"
+            spicejet:textStyle="regular" />
+
+        <com.vl.spicejet.components.CustomTextView
+            android:id="@+id/TextView_airportname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="Delhi International Airport"
+            android:textColor="@color/manage_booking_header"
+            android:textSize="@dimen/sp_13"
+            android:visibility="invisible"
+            spicejet:textStyle="regular" />
+
+        <LinearLayout
+            android:id="@+id/ll_passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_airportname"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_passenger_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/passengers"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_passenger_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="TestBooking Yeam"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_airline_pnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_passengers"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_airlinepnr_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/air_line_pnr"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_airlinepnr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="8T67DK"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_flighttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_airline_pnr"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_flighttime_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/flight_time"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_flighttime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="01:30"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_13"
+                spicejet:textStyle="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_flightTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 "
+                android:textColor="@color/app_theme_red"
+                android:textSize="@dimen/sp_24"
+                spicejet:textStyle="light" />
+
+            <com.vl.spicejet.components.CustomTextView
+                android:id="@+id/TextView_flightTime_ampm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM"
+                android:textColor="@color/manage_booking_header"
+                android:textSize="@dimen/sp_15"
+                spicejet:textStyle="light" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.vl.spicejet.components.CustomButton
+        android:id="@+id/IV_CancelFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/custombutton"
+        android:padding="@dimen/dp_5"
+        android:text="@string/cancel_flight"
+        android:textColor="@color/white" >
+    </com.vl.spicejet.components.CustomButton>
+
+</LinearLayout>
